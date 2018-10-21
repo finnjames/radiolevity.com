@@ -1,0 +1,170 @@
+/* pink color scheme? wip
+$color1: hsla(231%, 6%, 23%, 1);
+$color2: hsla(230%, 100%, 99%, 1);
+$color3: hsla(0%, 53%, 76%, 1);
+$color4: hsla(0%, 54%, 85%, 1);
+$color5: hsla(0%, 31%, 56%, 1);
+*/
+/* Coolors Exported Palette - coolors.co/373740-f9faff-72d38c-58a36c-416d4d */
+/*Guide
+1. Dark gray | 2. Off white | 3. green | 4. darker green | 5. Darkest green
+*/
+body {
+  background-color: #fafbff;
+  color: #37383e;
+  font-family: "Fira Sans", Helvetica, sans-serif;
+  font-size: 18px; }
+
+h1 {
+  font-family: "Averia Serif Libre", Georgia, serif; }
+
+h2 {
+  font-family: "Fira Sans", Helvetica, sans-serif;
+  font-style: italic;
+  text-align: center;
+  font-size: 19px;
+  color: #7dc67b;
+  margin: 0px; }
+
+h3 {
+  font-family: "Averia Serif Libre", Georgia, serif;
+  font-size: 28px;
+  color: #79b677; }
+
+h4 {
+  text-transform: uppercase;
+  font-size: 18px; }
+
+p {
+  font-family: "Fira Sans", Helvetica, sans-serif; }
+
+a:hover, a:visited, a:link, a:active {
+  text-decoration: none; }
+
+.heading-container {
+  color: #79b677;
+  margin: 0px;
+  padding: 0px;
+  background-color: #37383e; }
+
+#header {
+  height: auto; }
+
+.chfmText {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Averia Serif Libre", Georgia, serif;
+  font-size: 48px;
+  text-align: center;
+  color: #fafbff; }
+
+#navbar {
+  background-color: #37383e;
+  font-family: "Fira Sans", Helvetica, sans-serif;
+  font-size: 20px;
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  top: 0px;
+  right: 0px;
+  z-index: 1;
+  color: #37383e; }
+  #navbar .navElement {
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 0px;
+    padding-bottom: 0px; }
+  #navbar a {
+    text-decoration: none;
+    color: #fafbff; }
+    #navbar a:visited {
+      color: #fafbff; }
+    #navbar a:hover {
+      color: #7dc67b; }
+    #navbar a:active {
+      color: #79b677; }
+
+.hilight {
+  background-color: #7dc67b;
+  height: 0px;
+  width: 100%;
+  margin: 0px;
+  margin-top: 15px; }
+
+.popover {
+  font-family: "Fira Sans", Helvetica, sans-serif;
+  width: 900px; }
+  .popover .btn-success {
+    background-color: #7dc67b;
+    border-color: #79b677;
+    margin-right: 10px; }
+    .popover .btn-success .icon {
+      height: 14px;
+      margin-right: 10px; }
+    .popover .btn-success:hover {
+      background-color: #79b677;
+      border-color: #79b677; }
+    .popover .btn-success:active {
+      background-color: #79b677;
+      border-color: #79b677; }
+  .popover .popover-header {
+    background-color: #ebedf4; }
+  .popover .popover-body {
+    background-color: #fafbff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px; }
+  .popover .arrow:after {
+    border-top-color: #fafbff;
+    border-bottom-color: #ebedf4; }
+
+#content div {
+  padding: 10px 15px 0px; }
+#content a {
+  color: #37383e;
+  transition: color 200ms;
+  font-size: 18px;
+  text-align: right;
+  border-bottom: 2px solid #c5edc4;
+  box-shadow: inset 0 -6px 0 #c5edc4;
+  color: inherit;
+  transition: .15s ease-in-out; }
+  #content a:hover {
+    background: #c5edc4; }
+
+#diversity {
+  font-size: 16px;
+  font-style: italic;
+  color: #fafbff;
+  background-color: #79b677;
+  text-align: center;
+  padding: 0px;
+  padding-top: 20px;
+  margin: 0px 0px 30px;
+  border: 6px solid #79b677;
+  border-radius: 15px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto; }
+  #diversity div {
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 10px; }
+
+#footer {
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 25px;
+  margin-top: 25px;
+  background-color: #e0e2eb;
+  color: #37383e; }
+  #footer a {
+    text-decoration: underline;
+    color: #37383e;
+    display: inline-block;
+    margin-bottom: 8px; }
+    #footer a:hover {
+      color: #7dc67b; }
+    #footer a:active {
+      color: #79b677; }
