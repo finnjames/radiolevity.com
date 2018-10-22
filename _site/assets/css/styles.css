@@ -9,34 +9,37 @@ $color5: hsla(0%, 31%, 56%, 1);
 /*Guide
 1. Dark gray | 2. Off white | 3. green | 4. darker green | 5. Darkest green
 */
+html, body {
+  height: 100%; }
+
 body {
   background-color: #fafbff;
   color: #37383e;
   font-family: "Fira Sans", Helvetica, sans-serif;
-  font-size: 18px; }
+  font-size: 18px;
+  display: flex;
+  flex-direction: column; }
 
 h1 {
-  font-family: "Averia Serif Libre", Georgia, serif; }
-
-h2 {
-  font-family: "Fira Sans", Helvetica, sans-serif;
-  font-style: italic;
-  text-align: center;
-  font-size: 19px;
-  color: #7dc67b;
-  margin: 0px; }
-
-h3 {
   font-family: "Averia Serif Libre", Georgia, serif;
-  font-size: 28px;
+  font-size: 34px;
   color: #79b677; }
 
-h4 {
-  text-transform: uppercase;
-  font-size: 18px; }
+h2 {
+  color: #37383e;
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 0px; }
+
+h3 {
+  color: #9b9da6;
+  font-size: 14px;
+  font-style: italic; }
 
 p {
-  font-family: "Fira Sans", Helvetica, sans-serif; }
+  font-family: "Fira Sans", Helvetica, sans-serif;
+  font-size: 18px;
+  margin-bottom: 18px; }
 
 a:hover, a:visited, a:link, a:active {
   text-decoration: none; }
@@ -53,10 +56,19 @@ a:hover, a:visited, a:link, a:active {
 .chfmText {
   margin: 0px;
   padding: 0px;
+  height: 1.3em;
   font-family: "Averia Serif Libre", Georgia, serif;
-  font-size: 48px;
+  font-size: 2.2em;
   text-align: center;
   color: #fafbff; }
+
+#slogan {
+  font-family: "Fira Sans", Helvetica, sans-serif;
+  font-style: italic;
+  text-align: center;
+  font-size: 19px;
+  color: #7dc67b;
+  margin: 0px; }
 
 #navbar {
   background-color: #37383e;
@@ -90,7 +102,7 @@ a:hover, a:visited, a:link, a:active {
   height: 0px;
   width: 100%;
   margin: 0px;
-  margin-top: 15px; }
+  margin-top: 10px; }
 
 .popover {
   font-family: "Fira Sans", Helvetica, sans-serif;
@@ -118,19 +130,26 @@ a:hover, a:visited, a:link, a:active {
     border-top-color: #fafbff;
     border-bottom-color: #ebedf4; }
 
-#content div {
-  padding: 10px 15px 0px; }
-#content a {
-  color: #37383e;
-  transition: color 200ms;
-  font-size: 18px;
-  text-align: right;
-  border-bottom: 2px solid #c5edc4;
-  box-shadow: inset 0 -6px 0 #c5edc4;
-  color: inherit;
-  transition: .15s ease-in-out; }
-  #content a:hover {
-    background: #c5edc4; }
+#content {
+  padding: 15px 25px 15px;
+  max-width: 650px;
+  flex: 1 0 auto; }
+  #content .row {
+    margin: 0px;
+    padding: 0px; }
+  #content div {
+    padding: 10px 15px 0px; }
+  #content a {
+    color: #37383e;
+    transition: color 200ms;
+    font-size: 18px;
+    text-align: right;
+    border-bottom: 2px solid #c5edc4;
+    box-shadow: inset 0 -6px 0 #c5edc4;
+    color: inherit;
+    transition: .15s ease-in-out; }
+    #content a:hover {
+      background: #c5edc4; }
 
 #diversity {
   font-size: 16px;
@@ -158,7 +177,8 @@ a:hover, a:visited, a:link, a:active {
   padding: 25px;
   margin-top: 25px;
   background-color: #e0e2eb;
-  color: #37383e; }
+  color: #37383e;
+  flex-shrink: 0; }
   #footer a {
     text-decoration: underline;
     color: #37383e;
@@ -168,3 +188,27 @@ a:hover, a:visited, a:link, a:active {
       color: #7dc67b; }
     #footer a:active {
       color: #79b677; }
+
+#creditsBlock {
+  position: relative;
+  height: 18px;
+  width: auto;
+  padding: 0px;
+  margin: 0px; }
+
+#creditsReveal {
+  background-color: #e0e2eb;
+  height: inherit;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  z-index: 1; }
+
+#credits {
+  padding: 0px;
+  position: absolute;
+  height: inherit;
+  width: 100%;
+  top: 0px;
+  left: 0px; }
