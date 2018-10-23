@@ -78,14 +78,14 @@ a:hover, a:visited, a:link, a:active {
   font-size: 2.2em;
   text-align: center;
   color: $color2;
-  // text-shadow: $shadoweffect2;
+  //text-shadow: $shadoweffect2;
 }
 
 #slogan {
   font-family: $fontstack;
   font-style: italic;
   text-align: center;
-  font-size: 19px;
+  font-size: 16px;
   color: $color3;
   margin: 0px;
 }
@@ -94,6 +94,7 @@ a:hover, a:visited, a:link, a:active {
   background-color: $color1;
   font-family: $fontstack;
   font-size: 18px;
+  font-weight: 700;
   width: 100%;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -167,7 +168,7 @@ a:hover, a:visited, a:link, a:active {
 
 #content {
   padding: 15px 25px 15px;
-  max-width: 650px;
+  max-width: 840px;
   flex: 1 0 auto;
   .row {
     margin: 0px;
@@ -176,6 +177,9 @@ a:hover, a:visited, a:link, a:active {
   div {
     padding: 10px 15px 0px;
   }
+}
+
+.pagecontent {
   a {
     color: $color1;
     transition: color 200ms;
@@ -187,6 +191,24 @@ a:hover, a:visited, a:link, a:active {
     transition: .15s ease-in-out;
     &:hover {
       background: $color4;
+    }
+  }
+}
+
+.subnav {
+  font-size: 15px;
+  font-weight: 700;
+  a {
+    text-decoration: none;
+    color: $light1;
+    &:visited {
+      color: $light1;
+    }
+    &:hover {
+      color: $color3;
+    }
+    &:active {
+      color: $color5;
     }
   }
 }
@@ -261,4 +283,3 @@ a:hover, a:visited, a:link, a:active {
   top: 0px;
   left: 0px;
 }
-

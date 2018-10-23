@@ -2,13 +2,11 @@
 layout: default
 title: About
 permalink: /about
+sidebar: about-sidebar
 ---
 
 # About
 
-## Et quod nostrum sea
-expetenda maluisset urbanitas ut has, ut sed tota nominavi democritum. An convenire facilisis ullamcorper has, ad pro [decore](/) labore graeco, no eirmod deseruisse has. Commune voluptua persecuti mel te, mei cu ullum delectus, nec te commodo apeirian deterruisset. Ex mea vitae postea dicunt. Odio movet instructior an nam, mea omnium aeterno ex, viderer persequeris nec no. Eam ei homero putant petentium, id nominavi efficiantur reprehendunt nam.
+Chapel Hill Friends Meeting was established in 1937. We are a member of the Piedmont Friends Yearly Meeting. We are an [unprogrammed meeting](/) without clergy. We share responsibility for what happens in the Meeting. Ongoing activities are for the most part carried out by committee. 
 
-## Iudico iriure his cu
-### Cum in veniam ceteros detraxit
-Utamur evertitur ius ne. Ad mazim vivendo philosophia vel. Te alii decore est, posse affert ceteros ut est. Eu nec alii vocent vivendo.
+Seven of our members serve on the Board of the [Carolina Friends School](https://www.cfsnc.org/), which was started in 1964 by members of the Durham and Chapel Hill Meetings. One of the three Carolina Friends Early Schools (pre-school) is housed in our building. In addition, we helped to start and support the counseling work of Quaker House in Fayetteville, primarily for armed service personnel at Fort Bragg and Camp Lejeune.

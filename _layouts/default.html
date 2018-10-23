@@ -50,7 +50,20 @@
   </div>
   {% include navigation.html %}
   <div class="container" id="content" {% if page.url == "/" %} style="max-width: 1070px" {% endif %}>
-    {{ content }}
+    {% if page.sidebar != null %}
+    <div class="row">
+      <div class="col-sm-3 subnav">
+          {% for item in site.data[page.sidebar] %}
+            <div><a href="{{ item.url }}">{{ item.name }}</a></div>
+          {% endfor %}
+      </div>
+      <div class="col-sm-9 pagecontent">
+        {{ content }}
+      </div>
+    </div>
+    {% else %}
+      {{ content }}
+    {% endif %}
   </div>
   <div class="container-fluid" id="footer">
     {% include footer.html %}
