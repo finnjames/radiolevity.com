@@ -23,8 +23,8 @@
   <script src='https://www.google.com/recaptcha/api.js'></script>
 
   <!-- fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,400i" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre:700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Crete+Round:400i" rel="stylesheet">
 
   <!-- custom styling -->
   <link rel="stylesheet" type="text/css" href="/assets/css/styles.css">
@@ -74,19 +74,36 @@
 </head>
 
 <body>
-  <div class="container-fluid heading-container chfmText" id="header">
-    Chapel Hill Friends Meeting
-    <!-- <div class="chfmText">Chapel Hill</div>
-    <div class="chfmText" style="margin-bottom: 0px;">Friends Meeting</div> -->
-  </div>
-  <div class="container-fluid heading-container">
-    <div class="col" id="slogan">
-      Quakers!
+  <div class="container-fluid" id="header">
+    <div class="row">
+      <div class="col-2" style="padding: 0px">
+        <button
+          type="button"
+          id="diversityPop"
+          class="btn btn-success mx-auto"
+          data-toggle="popover"
+          data-placement="bottom"
+          data-trigger="focus"
+          title="Statement"
+          data-content="We joyfully embrace the full spectrum of the light within, made visible through the participation of people of all beliefs, cultures, backgrounds, abilities, ethnicities and races, sexual orientations, and gender identities.">
+          <div>=</div>
+        </button>
+      </div>
+      <div class="col-8">
+        <div class="row">
+          <div class="col" id="chfmText">
+            Chapel Hill Friends Meeting
+          </div>
+        </div>
+        <div class="row">
+          <div class="col" id="slogan">
+            Quakers!
+          </div>
+        </div>
+      </div>
+      <div class="col-2"></div>
     </div>
-  </div>
-  <nav>
-  <div class="container-fluid" id="navbar">
-    <div class="row mr-md-5 ml-md-5">
+    <div class="row pr-md-5 pl-md-5" id="navbar">
       
         <div class="col-4 col-sm navElement">
           <a href="/" class="currentPage">
@@ -126,28 +143,21 @@
       
     </div>
   </div>
-</nav>
   <div class="container" id="content"  style="max-width: 1070px" >
     
       <div class="pagecontent">
         <div class="container d-flex justify-content-center">
   <div class="row justify-content-center">
-    <div class="col-lg-3 col-md">
-      <div class="row">
-        <div id="diversity">
-          <div>
-            We joyfully embrace the full spectrum of the light within, made visible through the participation of people of all beliefs, cultures, backgrounds, abilities, ethnicities and races, sexual orientations, and gender identities.
-          </div>
-        </div>
-      </div>
+    <div class="col-lg-3 col-md order-lg-0 order-1">
       
-      <h1 id="first-day-school-schedule-sunday">First Day School Schedule (Sunday)</h1>
+      <h1 id="first-day-school-schedule">First Day School Schedule</h1>
+<h2 id="sunday">Sunday</h2>
 <p>8:30am - Early Worship
 11am - Worship
 No First Day School on Sunday Sept. 16</p>
 
     </div>
-    <div class="col-lg-3 col-md">
+    <div class="col-lg-3 col-md order-lg-1 order-2">
       
       <h1 id="welcome">Welcome</h1>
 <p>The Chapel Hill Friends is an unprogramed meeting established in 1937. We are a member of the Piedmont Friends Yearly Meeting.</p>
@@ -155,7 +165,7 @@ No First Day School on Sunday Sept. 16</p>
 <p>Our <a href="/about">About</a> page has basic information about what to expect at a Quaker Meeting for Worship. If you have additional questions or would like to know more about Quakers, feel free to <a href="/contact.html">contact us</a> and be sure to <!-- this link tag is for the form popover, so it's formatted with html--> <a href="#" id="newsPop" data-toggle="popover" data-placement="top">sign up for our newsletter</a>.</p>
 
     </div>
-    <div class="col-lg-6">
+    <div class="col-lg-6 order-lg-2 order-0">
       
       <h1 id="currently">Currently</h1>
 <p><a href="/">Peace and Justice Benevolances</a></p>

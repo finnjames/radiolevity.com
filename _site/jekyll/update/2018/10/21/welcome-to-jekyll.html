@@ -23,8 +23,8 @@
   <script src='https://www.google.com/recaptcha/api.js'></script>
 
   <!-- fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,400i" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre:700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Crete+Round:400i" rel="stylesheet">
 
   <!-- custom styling -->
   <link rel="stylesheet" type="text/css" href="/assets/css/styles.css">
@@ -76,19 +76,36 @@
 </head>
 
 <body>
-  <div class="container-fluid heading-container chfmText" id="header">
-    Chapel Hill Friends Meeting
-    <!-- <div class="chfmText">Chapel Hill</div>
-    <div class="chfmText" style="margin-bottom: 0px;">Friends Meeting</div> -->
-  </div>
-  <div class="container-fluid heading-container">
-    <div class="col" id="slogan">
-      Quakers!
+  <div class="container-fluid" id="header">
+    <div class="row">
+      <div class="col-2" style="padding: 0px">
+        <button
+          type="button"
+          id="diversityPop"
+          class="btn btn-success mx-auto"
+          data-toggle="popover"
+          data-placement="bottom"
+          data-trigger="focus"
+          title="Statement"
+          data-content="We joyfully embrace the full spectrum of the light within, made visible through the participation of people of all beliefs, cultures, backgrounds, abilities, ethnicities and races, sexual orientations, and gender identities.">
+          <div>=</div>
+        </button>
+      </div>
+      <div class="col-8">
+        <div class="row">
+          <div class="col" id="chfmText">
+            Chapel Hill Friends Meeting
+          </div>
+        </div>
+        <div class="row">
+          <div class="col" id="slogan">
+            Quakers!
+          </div>
+        </div>
+      </div>
+      <div class="col-2"></div>
     </div>
-  </div>
-  <nav>
-  <div class="container-fluid" id="navbar">
-    <div class="row mr-md-5 ml-md-5">
+    <div class="row pr-md-5 pl-md-5" id="navbar">
       
         <div class="col-4 col-sm navElement">
           <a href="/" >
@@ -128,7 +145,6 @@
       
     </div>
   </div>
-</nav>
   <div class="container" id="content" >
     
       <div class="pagecontent">

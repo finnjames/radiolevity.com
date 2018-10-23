@@ -15,14 +15,15 @@ html, body {
 body {
   background-color: #fafbff;
   color: #37383e;
-  font-family: "Fira Sans", Helvetica, sans-serif;
+  font-family: "Open Sans" Helvetica, sans-serif;
   font-size: 18px;
   display: flex;
   flex-direction: column; }
 
 h1 {
-  font-family: "Averia Serif Libre", Georgia, serif;
-  font-size: 34px;
+  font-family: "Crete Round", Georgia, serif;
+  font-weight: 700;
+  font-size: 30px;
   color: #79b677; }
 
 h2 {
@@ -37,33 +38,62 @@ h3 {
   font-style: italic; }
 
 p {
-  font-family: "Fira Sans", Helvetica, sans-serif;
-  font-size: 18px;
+  font-family: "Open Sans" Helvetica, sans-serif;
+  font-size: 16px;
   margin-bottom: 18px; }
 
 a:hover, a:visited, a:link, a:active {
   text-decoration: none; }
 
-.heading-container {
+#header {
   color: #79b677;
   margin: 0px;
   padding: 0px;
   background-color: #37383e; }
 
-#header {
-  height: auto; }
-
-.chfmText {
-  margin: 0px;
-  padding: 0px;
-  height: 1.3em;
-  font-family: "Averia Serif Libre", Georgia, serif;
+#chfmText {
+  font-family: "Crete Round", Georgia, serif;
+  font-weight: 700;
   font-size: 2.2em;
-  text-align: center;
-  color: #fafbff; }
+  color: #fafbff;
+  text-align: center; }
+
+.btn-success {
+  background-color: #7dc67b;
+  border-color: #79b677;
+  margin-right: 10px; }
+  .btn-success .icon {
+    height: 14px;
+    margin-right: 10px; }
+  .btn-success:hover {
+    background-color: #79b677;
+    border-color: #79b677; }
+  .btn-success:active {
+    background-color: #79b677;
+    border-color: #79b677; }
+
+#diversityPop {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  display: block;
+  color: #fafbff;
+  background-color: #7dc67b;
+  padding: 0px;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  transform-style: preserve-3d; }
+  #diversityPop div {
+    margin-top: -8.3333333333px; }
 
 #slogan {
-  font-family: "Fira Sans", Helvetica, sans-serif;
+  font-family: "Open Sans" Helvetica, sans-serif;
   font-style: italic;
   text-align: center;
   font-size: 16px;
@@ -72,8 +102,8 @@ a:hover, a:visited, a:link, a:active {
 
 #navbar {
   background-color: #37383e;
-  font-family: "Fira Sans", Helvetica, sans-serif;
-  font-size: 18px;
+  font-family: "Open Sans" Helvetica, sans-serif;
+  font-size: 17px;
   font-weight: 700;
   width: 100%;
   margin-top: 0px;
@@ -106,21 +136,8 @@ a:hover, a:visited, a:link, a:active {
   margin-top: 10px; }
 
 .popover {
-  font-family: "Fira Sans", Helvetica, sans-serif;
+  font-family: "Open Sans" Helvetica, sans-serif;
   width: 900px; }
-  .popover .btn-success {
-    background-color: #7dc67b;
-    border-color: #79b677;
-    margin-right: 10px; }
-    .popover .btn-success .icon {
-      height: 14px;
-      margin-right: 10px; }
-    .popover .btn-success:hover {
-      background-color: #79b677;
-      border-color: #79b677; }
-    .popover .btn-success:active {
-      background-color: #79b677;
-      border-color: #79b677; }
   .popover .popover-header {
     background-color: #ebedf4; }
   .popover .popover-body {
@@ -144,17 +161,15 @@ a:hover, a:visited, a:link, a:active {
 .pagecontent a {
   color: #37383e;
   transition: color 200ms;
-  font-size: 18px;
   text-align: right;
   border-bottom: 2px solid #c5edc4;
   box-shadow: inset 0 -6px 0 #c5edc4;
-  color: inherit;
-  transition: .15s ease-in-out; }
+  color: inherit; }
   .pagecontent a:hover {
     background: #c5edc4; }
 
 .subnav {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 700; }
   .subnav a {
     text-decoration: none;
@@ -165,25 +180,6 @@ a:hover, a:visited, a:link, a:active {
       color: #7dc67b; }
     .subnav a:active {
       color: #79b677; }
-
-#diversity {
-  font-size: 16px;
-  font-style: italic;
-  color: #fafbff;
-  background-color: #79b677;
-  text-align: center;
-  padding: 0px;
-  padding-top: 20px;
-  margin: 0px 0px 30px;
-  border: 6px solid #79b677;
-  border-radius: 15px;
-  width: 300px;
-  margin-left: auto;
-  margin-right: auto; }
-  #diversity div {
-    padding: 0px;
-    margin: 0px;
-    margin-bottom: 10px; }
 
 #footer {
   text-align: center;

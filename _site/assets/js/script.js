@@ -18,6 +18,11 @@ $(function () {
 });
 
 
+// diversity popover
+$(function () {
+  $('#diversityPop').popover()
+})
+
 // make the nav item underlines
 $(function () {
   $('.navElement').append('<div class="hilight"></div>');

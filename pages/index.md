@@ -5,22 +5,15 @@ permalink: /
 ---
 <div class="container d-flex justify-content-center">
   <div class="row justify-content-center">
-    <div class="col-lg-3 col-md">
-      <div class="row">
-        <div id="diversity">
-          <div>
-            We joyfully embrace the full spectrum of the light within, made visible through the participation of people of all beliefs, cultures, backgrounds, abilities, ethnicities and races, sexual orientations, and gender identities.
-          </div>
-        </div>
-      </div>
+    <div class="col-lg-3 col-md order-lg-0 order-1">
       {% capture fds-schedule-include %}{% include fds-schedule.md %}{% endcapture %}
       {{ fds-schedule-include | markdownify }}
     </div>
-    <div class="col-lg-3 col-md">
+    <div class="col-lg-3 col-md order-lg-1 order-2">
       {% capture welcome-include %}{% include welcome.md %}{% endcapture %}
       {{ welcome-include | markdownify }}
     </div>
-    <div class="col-lg-6">
+    <div class="col-lg-6 order-lg-2 order-0">
       {% capture currently-include %}{% include currently.md %}{% endcapture %}
       {{ currently-include | markdownify }}
     </div>
