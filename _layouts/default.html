@@ -43,7 +43,22 @@
 <body>
   <div class="container-fluid" id="header">
     <div class="row">
-      <div class="col-2" style="padding: 0px">
+      <div class="col-sm-2" style="padding: 0px">
+        
+      </div>
+      <div class="col-sm-8">
+        <div class="row">
+          <div class="col" id="chfmText">
+            Chapel Hill Friends Meeting
+          </div>
+        </div>
+        <div class="row">
+          <div class="col" id="slogan">
+            Quakers!
+          </div>
+        </div>
+      </div>
+      <div class="col" style="padding: 0px;">
         <button
           type="button"
           id="diversityPop"
@@ -56,23 +71,10 @@
           <div>=</div>
         </button>
       </div>
-      <div class="col-8">
-        <div class="row">
-          <div class="col" id="chfmText">
-            Chapel Hill Friends Meeting
-          </div>
-        </div>
-        <div class="row">
-          <div class="col" id="slogan">
-            Quakers!
-          </div>
-        </div>
-      </div>
-      <div class="col-2"></div>
     </div>
     <div class="row pr-md-5 pl-md-5" id="navbar">
       {% for item in site.data.navigation %}
-        <div class="col-4 col-sm navElement">
+        <div class="col navElement">
           <a href="{{ item.link }}" {% if page.url == item.link %}class="currentPage"{% endif %}>
             {{ item.name }}
           </a>

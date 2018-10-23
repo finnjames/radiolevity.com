@@ -62,7 +62,6 @@ a:hover, a:visited, a:link, a:active {
 #header {
   color: $color5;
   margin: 0px;
-  padding: 0px;
   background-color: $color1;
 }
 
@@ -126,8 +125,7 @@ a:hover, a:visited, a:link, a:active {
   font-size: 17px;
   font-weight: 700;
   width: 100%;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin: 0px;
   padding-bottom: 0px;
   top: 0px;
   right: 0px;
@@ -135,9 +133,8 @@ a:hover, a:visited, a:link, a:active {
   color: $color1;
   .navElement {
     text-align: center;
-    padding-top: 10px;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
+    margin: 0px 5px 0px;
+    padding: 10px 0px 0px;
   }
   a {
     text-decoration: none;

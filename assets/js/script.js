@@ -61,22 +61,21 @@ $(function () {
 
 // make the navbar snap to the top
 $(function () {
+  var headerHeight = $('#header').height();
+  headerHeight -= $('#navbar').height();
+
   var collapseNav = function (direction) {
     if (direction) {
       $('#content').css({ "margin-top": $('#navbar').height() });
       $('#navbar').css({ "position": "fixed", "margin-top": "0px" });
-
     } else {
       $('#navbar').css({ "position": "relative", "margin-top": "0px" });
       $('#content').css({ "margin-top": "0px" });
     }
   }
+  
   $(window).scroll(function () {
     if ($(window).width() >= 720) {
-      var headerHeight = 0;
-      $('.heading-container').each(function () {
-        headerHeight += $(this).height();
-      });
 
       // make the navbar snap to the top when scrolled past it
       if ($(window).scrollTop() >= headerHeight) {
