@@ -48,7 +48,11 @@ a:hover, a:visited, a:link, a:active {
 #header {
   color: #79b677;
   margin: 0px;
-  background-color: #37383e; }
+  background-color: #37383e;
+  padding: 0px; }
+  #header div {
+    margin-left: 0px;
+    margin-right: 0px; }
 
 #chfmText {
   font-family: "Crete Round", Georgia, serif;
@@ -113,7 +117,8 @@ a:hover, a:visited, a:link, a:active {
   color: #37383e; }
   #navbar .navElement {
     text-align: center;
-    margin: 0px 5px 0px;
+    padding: 5px;
+    margin: 0px;
     padding: 10px 0px 0px; }
   #navbar a {
     text-decoration: none;

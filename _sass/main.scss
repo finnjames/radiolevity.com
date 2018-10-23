@@ -63,6 +63,11 @@ a:hover, a:visited, a:link, a:active {
   color: $color5;
   margin: 0px;
   background-color: $color1;
+  padding: 0px;
+  div {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 }
 
 #chfmText {
@@ -133,7 +138,8 @@ a:hover, a:visited, a:link, a:active {
   color: $color1;
   .navElement {
     text-align: center;
-    margin: 0px 5px 0px;
+    padding: 5px;
+    margin: 0px;
     padding: 10px 0px 0px;
   }
   a {
