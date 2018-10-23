@@ -38,11 +38,10 @@
 </head>
 
 <body>
-  <div class="container-fluid heading-container" id="header">
-    <div class="col">
-      <div class="chfmText">Chapel Hill</div>
-      <div class="chfmText" style="margin-bottom: 0px;">Friends Meeting</div>
-    </div>
+  <div class="container-fluid heading-container chfmText" id="header">
+    Chapel Hill Friends Meeting
+    <!-- <div class="chfmText">Chapel Hill</div>
+    <div class="chfmText" style="margin-bottom: 0px;">Friends Meeting</div> -->
   </div>
   <div class="container-fluid heading-container">
     <div class="col" id="slogan">
@@ -50,7 +49,7 @@
     </div>
   </div>
   {% include navigation.html %}
-  <div class="container" id="content">
+  <div class="container" id="content" {% if page.url == "/" %} style="max-width: 970px" {% endif %}>
     {{ content }}
   </div>
   <div class="container-fluid" id="footer">

@@ -152,18 +152,17 @@ $(function () {
   });
 });
 
+// makes the credits appear when you click my name
 $(function () {  
   var originalHeight = $('#credits').height();
-  console.log(originalHeight);
   
-  // $('#creditsBlock').prepend('<div id="creditsReveal"></div>');
   var state = true;
   
   $('#copyright').click(function () {
     if (state) {
       $('#creditsReveal').stop().animate({ height: 0 }, 500, 'easeOutBounce');
     } else {
-      $('#creditsReveal').stop().animate({ height: originalHeight }, 500, 'easeOutExpo');
+      $('#creditsReveal').animate({ height: originalHeight }, 500, 'easeOutExpo');
     }
     state = !state;
   });
