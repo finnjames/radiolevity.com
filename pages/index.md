@@ -3,7 +3,7 @@ layout: default
 title: Home
 permalink: /
 ---
-<div class="container">
+<div class="container" style="margin-top: -20px;">
   <div class="row justify-content-center">
     <div class="col-lg-3 col-md order-lg-0 order-1">
       {% capture fds-schedule-include %}{% include fds-schedule.md %}{% endcapture %}
@@ -13,7 +13,7 @@ permalink: /
       {% capture welcome-include %}{% include welcome.md %}{% endcapture %}
       {{ welcome-include | markdownify }}
     </div>
-    <div class="col-lg-6 order-lg-2 order-0" style="padding-top: 0px;">
+    <div class="col-lg-6 order-lg-2 order-0">
       {% capture currently-include %}{% include currently.md %}{% endcapture %}
       {{ currently-include | markdownify }}
     </div>
