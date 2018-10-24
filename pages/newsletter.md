@@ -1,14 +1,18 @@
 ---
-layout: default
+layout: center
 title: Newsletter
 permalink: /newsletter
 ---
 
 # Newsletter
+<!-- TODO: Swap between grid and timeline layouts -->
 
-## Ne eam
-### tibique scaevola philosophia
-Sea harum animal ut, nec veritus democritum ad. [Euismod](/) detracto conceptam ea nam, id minimum molestiae sea. Pro eu fabulas antiopam expetendis.
-
-## Sed no brute euismod senserit
-mea equidem propriae noluisse no.
+<div class="row">
+    {% for post in site.posts %}
+    <div class="col-6">
+        <h2>{{ post.title }}</h2>
+        <h3>{{ post.date | date_to_string }}</h3>
+        <p>{{ post.excerpt }}</p>
+    </div>
+    {% endfor %}
+</div>

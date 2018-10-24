@@ -93,30 +93,10 @@
     </div>
   </div>
   <div class="container" id="content">
-    <div class="row">
-      {% if page.sidebar == null %}
-        <div class="col pagecontent">
-          {{ content }}
-        </div>
-      {% elsif page.sidebar == 'home' %}
-        <div class="row pagecontent" style="padding: 0">
-          {{ content }}
-        </div>
-      {% else %}
-        <div class="col-sm-3 subnav">
-            {% for item in site.data[page.sidebar] %}
-              <div><a href="{{ item.url }}">{{ item.name }}</a></div>
-            {% endfor %}
-        </div>
-        <div class="col-sm-9 pagecontent">
-          {{ content }}
-        </div>
-      {% endif %}
-    </div>
+    {{ content }}
   </div>
   <div class="container-fluid" id="footer">
     {% include footer.html %}
-    <div class=
   </div>
 </body>
 

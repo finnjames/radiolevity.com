@@ -34,6 +34,7 @@ h2 {
 
 h3 {
   color: #9b9da6;
+  padding-top: 5px;
   font-size: 14px;
   font-style: italic; }
 
@@ -167,10 +168,6 @@ a:hover, a:visited, a:link, a:active {
   color: inherit; }
   .pagecontent a:hover, .popover a:hover {
     background: #c5edc4; }
-
-.pagecontent {
-  padding: 0px;
-  margin: 0px; }
 
 .subnav {
   font-size: 16px;
