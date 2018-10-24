@@ -168,8 +168,8 @@ a:hover, a:visited, a:link, a:active {
   .pagecontent a:hover, .popover a:hover {
     background: #c5edc4; }
 
-.noSpacing {
-  padding: 0px !important;
+.pagecontent {
+  padding: 0px;
   margin: 0px; }
 
 .subnav {
