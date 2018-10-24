@@ -76,7 +76,7 @@
 <body>
   <div class="container-fluid" id="header">
     <div class="row">
-      <div class="col-sm-2" style="padding: 0px">
+      <div class="col-sm-2 col-6 order-sm-0 order-1" style="padding: 0px">
         <button
           type="button"
           id="diversityPop"
@@ -89,54 +89,65 @@
           <div>=</div>
         </button>
       </div>
-      <div class="col-sm-8">
+      <div class="col-sm-8 order-sm-1 order-0">
         <div class="row">
           <div class="col" id="chfmText">
             Chapel Hill Friends Meeting
           </div>
         </div>
-        <div class="row">
+        <div class="row d-none d-sm-block">
           <div class="col" id="slogan">
             Quakers!
           </div>
         </div>
       </div>
-      <div class="col">
+      <div class="col-sm-2 col-6 order-sm-2 order-3">
+          <button
+          type="button"
+          id="contactPop"
+          class="btn btn-success mx-auto"
+          data-toggle="popover"
+          data-placement="bottom"
+          data-trigger="focus"
+          title="Contact Us"
+          >
+          <div>+</div>
+        </button>
       </div>
     </div>
     <div class="row pr-md-5 pl-md-5" id="navbar">
       
-        <div class="col navElement">
+        <div class="col-sm col-4 navElement">
           <a href="/" >
             Home
           </a>
         </div>
       
-        <div class="col navElement">
+        <div class="col-sm col-4 navElement">
           <a href="/about" >
             About
           </a>
         </div>
       
-        <div class="col navElement">
+        <div class="col-sm col-4 navElement">
           <a href="/calendar" >
             Calendar
           </a>
         </div>
       
-        <div class="col navElement">
+        <div class="col-sm col-4 navElement">
           <a href="/forums" >
             Forums
           </a>
         </div>
       
-        <div class="col navElement">
+        <div class="col-sm col-4 navElement">
           <a href="/contact" >
             Contact
           </a>
         </div>
       
-        <div class="col navElement">
+        <div class="col-sm col-4 navElement">
           <a href="/newsletter" >
             Newsletter
           </a>

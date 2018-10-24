@@ -12,4 +12,10 @@ var newsletterPop = `
   </form>
 `;
 
+var contactPop = `
+  <div>531 Raleigh Road, Chapel Hill, NC 27514</div>
+  <div><a href="mailto:friends@chapelhillfriends.org">friends@chapelhillfriends.org</a></div>
+  <div>919.929.5377</div>
+`;
+
 // end o' the jQuery

@@ -18,9 +18,14 @@ $(function () {
 });
 
 
-// diversity popover
+// diversity and contact popovers
 $(function () {
-  $('#diversityPop').popover()
+  $('#diversityPop').popover();
+  $('#contactPop').popover({
+    title: 'Contact Us',
+    html: true,
+    content: contactPop,
+  });
 })
 
 // make the nav item underlines
@@ -73,7 +78,7 @@ $(function () {
       $('#content').css({ "margin-top": "0px" });
     }
   }
-  
+
   $(window).scroll(function () {
     if ($(window).width() >= 720) {
 
