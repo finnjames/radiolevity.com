@@ -169,7 +169,7 @@ $(function () {
   
   $('#copyright').click(function () {
     if (state) {
-      $('#creditsReveal').stop().animate({ height: 0 }, 500, 'easeOutBounce');
+      $('#creditsReveal').stop().animate({ height: 0 }, 500, 'easeOutExpo');
     } else {
       $('#creditsReveal').animate({ height: originalHeight }, 500, 'easeOutExpo');
     }
