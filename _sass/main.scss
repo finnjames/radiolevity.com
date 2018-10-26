@@ -12,6 +12,12 @@
   transform-style: preserve-3d;
 }
 
+@mixin gradient-text(){
+  background: $gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 $fontstack: 'Open Sans', Helvetica, sans-serif;
 $titlestack: 'Crete Round', Georgia, serif;
 $transition: all 200ms ease-in-out;
@@ -34,6 +40,8 @@ h1 {
   font-weight: 700;
   font-size: 30px;
   color: $color5;
+  display: inline-block;
+  @include gradient-text();
 }
 
 h2 {
@@ -77,6 +85,7 @@ a:hover, a:visited, a:link, a:active {
   font-size: 2em;
   color: $color2;
   text-align: center;
+  @include gradient-text();
   // text-shadow: $shadoweffect2;
 }
 
@@ -134,6 +143,7 @@ a:hover, a:visited, a:link, a:active {
   text-align: center;
   font-size: 16px;
   color: $color3;
+  @include gradient-text();
   margin: 0px;
 }
 
@@ -161,6 +171,11 @@ a:hover, a:visited, a:link, a:active {
     }
     &:hover {
       color: $color3;
+      @include gradient-text();
+      background-image: $gradient-horizontal;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
     }
     &:active {
       color: $color5;
@@ -169,11 +184,14 @@ a:hover, a:visited, a:link, a:active {
 }
 
 .hilight {
-  background-color: $color3;
   height: 0px;
   width: 100%;
   margin: 0px;
   margin-top: 10px;
+  background-image: $gradient-horizontal;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .popover {

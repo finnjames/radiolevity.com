@@ -24,7 +24,11 @@ h1 {
   font-family: "Crete Round", Georgia, serif;
   font-weight: 700;
   font-size: 30px;
-  color: #79b677; }
+  color: #79b677;
+  display: inline-block;
+  background: linear-gradient(10deg, #7dc67b 0%, #bcbcf2 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
 
 h2 {
   color: #37383e;
@@ -60,7 +64,10 @@ a:hover, a:visited, a:link, a:active {
   font-weight: 700;
   font-size: 2em;
   color: #fafbff;
-  text-align: center; }
+  text-align: center;
+  background: linear-gradient(10deg, #7dc67b 0%, #bcbcf2 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
 
 .btn-success {
   background-color: #7dc67b;
@@ -113,6 +120,9 @@ a:hover, a:visited, a:link, a:active {
   text-align: center;
   font-size: 16px;
   color: #7dc67b;
+  background: linear-gradient(10deg, #7dc67b 0%, #bcbcf2 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin: 0px; }
 
 #navbar {
@@ -136,16 +146,26 @@ a:hover, a:visited, a:link, a:active {
     #navbar a:visited {
       color: #fafbff; }
     #navbar a:hover {
-      color: #7dc67b; }
+      color: #7dc67b;
+      background: linear-gradient(10deg, #7dc67b 0%, #bcbcf2 70%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-image: linear-gradient(to right, #7dc67b 0%, #bcbcf2 70%);
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed; }
     #navbar a:active {
       color: #79b677; }
 
 .hilight {
-  background-color: #7dc67b;
   height: 0px;
   width: 100%;
   margin: 0px;
-  margin-top: 10px; }
+  margin-top: 10px;
+  background-image: linear-gradient(to right, #7dc67b 0%, #bcbcf2 70%);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; }
 
 .popover {
   font-family: "Open Sans", Helvetica, sans-serif;
