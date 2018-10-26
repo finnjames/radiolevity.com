@@ -30,7 +30,32 @@ $(function () {
     html: true,
     content: contactPop,
   });
-})
+});
+
+// diversity and contact tooltips (ask people to click)
+$(function () {
+  $('#diversityPop').tooltip({
+    title: 'click to read!',
+    placement: 'left',
+    trigger: 'hover'
+  });
+  $('#contactPop').tooltip({
+    title: 'click to read!',
+    placement: 'right',
+    trigger: 'hover'
+  });
+});
+
+$( function () {
+  if ($(window).width() >= 720) {
+    $('#contactPop').tooltip('show');
+  $('#diversityPop').tooltip('show');
+  setTimeout(() => {
+    $('#diversityPop').tooltip('hide');
+    $('#contactPop').tooltip('hide');
+  }, 1200);
+  }
+});
 
 // make the nav item underlines
 $(function () {
