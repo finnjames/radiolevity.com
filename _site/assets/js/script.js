@@ -91,14 +91,10 @@ $(function () {
 //   }
 // });
 
-// make the nav item underlines
-$(function () {
-  $('.navElement').append('<div class="hilight"></div>');
-});
-
 
 // underline nav items
 $(function () {
+  $('.navElement').append('<div class="hilight"></div>'); // make the nav item underlines
   var aniTimeIn = 250;
   var aniTimeOut = 250;
   var easeInType = "easeOutExpo";
@@ -118,6 +114,7 @@ $(function () {
       $(this).children('div.hilight').stop().animate({ height: originalMarginTop, marginTop: "0px" }, aniTimeIn, easeInType);
     }
   });
+  // TODO: consolidate this logic to avoid using both Jekyll and jQuery for one task
   $('.navElement').mouseout(function () {
     // make the current page not animate
     if (!($(this).children("a").hasClass('currentPage'))) {
@@ -129,8 +126,7 @@ $(function () {
 
 // make the navbar snap to the top
 $(function () {
-  var headerHeight = $('#header').height();
-  headerHeight -= $('#navbar').height();
+  var headerHeight = $('#header').height() - $('#navbar').height();
 
   var collapseNav = function (direction) {
     if (direction) {
@@ -161,7 +157,6 @@ $(function () {
       }
       var shadowValue = "0px " + shadowHeight * .3 + "px " + shadowHeight * 1 + "px rgba(0, 0, 0, " + (shadowHeight * .04) + ")";
       $('#navbar').css({ "box-shadow": shadowValue });
-
     }
   });
 });
@@ -184,7 +179,6 @@ $(function () {
     $(this).parents(".popover").popover('hide');
     return false;
   });
-
 });
 
 // function that verifies the input is an email address
@@ -192,7 +186,6 @@ function validEmail(v) {
   var r = new RegExp("[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?");
   return (v.match(r) == null) ? false : true;
 }
-
 
 // sends the form info to the Google Sheet
 $(function () {
