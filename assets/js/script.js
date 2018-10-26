@@ -25,7 +25,7 @@ $(function () {
     21: "likely not seen on tv",
     22: "our favorite is Integrity Spice",
     23: "there aren't a lot of good ‘quaker’ puns",
-    24: "This site lovingly constructed by yours truly",
+    24: "this site written by hand by yours truly",
     25: "Go Heels!",
     26: "the official site of the legendary CHFM",
     27: "we love NPR",
