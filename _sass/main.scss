@@ -18,6 +18,13 @@
   -webkit-text-fill-color: transparent;
 }
 
+@mixin site-gradient(){
+  background-image: $gradient-horizontal;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 $fontstack: 'Open Sans', Helvetica, sans-serif;
 $titlestack: 'Crete Round', Georgia, serif;
 $transition: all 200ms ease-in-out;
@@ -42,6 +49,7 @@ h1 {
   color: $color5;
   display: inline-block;
   @include gradient-text();
+  @include site-gradient();
 }
 
 h2 {
@@ -91,6 +99,13 @@ a:hover, a:visited, a:link, a:active {
 
 .btn-success {
   background-color: $color3;
+  // background-image: $gradient;
+  // @include site-gradient();
+  // figure out how bootstap handles button borders before implementation
+  // background-image: $gradient-horizontal;
+  // background-size: cover;
+  // background-position: center;
+  // background-attachment: fixed;
   border-color: $color5;
   margin-right: 10px;
   .icon {
@@ -172,10 +187,7 @@ a:hover, a:visited, a:link, a:active {
     &:hover {
       color: $color3;
       @include gradient-text();
-      background-image: $gradient-horizontal;
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
+      @include site-gradient();
     }
     &:active {
       color: $color5;
@@ -188,10 +200,7 @@ a:hover, a:visited, a:link, a:active {
   width: 100%;
   margin: 0px;
   margin-top: 10px;
-  background-image: $gradient-horizontal;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  @include site-gradient();
 }
 
 .popover {

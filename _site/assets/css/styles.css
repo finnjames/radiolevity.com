@@ -28,7 +28,11 @@ h1 {
   display: inline-block;
   background: linear-gradient(10deg, #7dc67b 0%, #bcbcf2 70%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; }
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to right, #7dc67b 0%, #bcbcf2 70%);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; }
 
 h2 {
   color: #37383e;
