@@ -181,6 +181,7 @@ a:hover, a:visited, a:link, a:active {
   width: 900px;
   .popover-header {
     background-color: desaturate(darken($color2, 5%), 70%);
+    font-weight: 700;
   }
   .popover-body {
     background-color: $color2;

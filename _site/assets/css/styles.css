@@ -151,7 +151,8 @@ a:hover, a:visited, a:link, a:active {
   font-family: "Open Sans", Helvetica, sans-serif;
   width: 900px; }
   .popover .popover-header {
-    background-color: #ebedf4; }
+    background-color: #ebedf4;
+    font-weight: 700; }
   .popover .popover-body {
     background-color: #fafbff;
     border-bottom-left-radius: 5px;

@@ -35,27 +35,30 @@ $(function () {
 // diversity and contact tooltips (ask people to click)
 $(function () {
   $('#diversityPop').tooltip({
-    title: 'click to read!',
+    title: 'inclusion statement',
     placement: 'left',
     trigger: 'hover'
   });
   $('#contactPop').tooltip({
-    title: 'click to read!',
+    title: 'contact us',
     placement: 'right',
     trigger: 'hover'
   });
 });
 
-$( function () {
-  if ($(window).width() >= 720) {
-    $('#contactPop').tooltip('show');
-  $('#diversityPop').tooltip('show');
-  setTimeout(() => {
-    $('#diversityPop').tooltip('hide');
-    $('#contactPop').tooltip('hide');
-  }, 1200);
-  }
-});
+// this one displays the tooltips on entering the site
+// $( function () {
+//   if ($(window).width() >= 720) {
+//     setTimeout(() => {
+//       $('#contactPop').tooltip('show');
+//       $('#diversityPop').tooltip('show');
+//     }, 400);
+//     setTimeout(() => {
+//       $('#diversityPop').tooltip('hide');
+//       $('#contactPop').tooltip('hide');
+//     }, 1800);
+//   }
+// });
 
 // make the nav item underlines
 $(function () {
