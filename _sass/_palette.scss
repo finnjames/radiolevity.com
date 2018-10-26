@@ -18,6 +18,7 @@ $textcolor: $color1;
 
 $light1: lighten($color1, 40%);
 $dark2: hsla(230%, 20%, 90%, 1);
+$dark3: darken($color3, 30%);
 
 $shadoweffect: 0 1px  0 #898989,
                0.5px  2px  0    #808080,

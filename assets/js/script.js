@@ -20,7 +20,11 @@ $(function () {
 
 // diversity and contact popovers
 $(function () {
-  $('#diversityPop').popover();
+  $('#diversityPop').popover({
+    title: 'Statement',
+    html: true,
+    content: diversityPop,
+  });
   $('#contactPop').popover({
     title: 'Contact Us',
     html: true,

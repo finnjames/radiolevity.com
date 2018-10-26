@@ -15,7 +15,7 @@ html, body {
 body {
   background-color: #fafbff;
   color: #37383e;
-  font-family: "Open Sans" Helvetica, sans-serif;
+  font-family: "Open Sans", Helvetica, sans-serif;
   font-size: 18px;
   display: flex;
   flex-direction: column; }
@@ -39,7 +39,7 @@ h3 {
   font-style: italic; }
 
 p {
-  font-family: "Open Sans" Helvetica, sans-serif;
+  font-family: "Open Sans", Helvetica, sans-serif;
   font-size: 16px;
   margin-bottom: 18px; }
 
@@ -76,6 +76,9 @@ a:hover, a:visited, a:link, a:active {
     background-color: #79b677;
     border-color: #79b677; }
 
+.besideCHFM {
+  padding: 0px; }
+
 #diversityPop, #contactPop {
   width: 50px;
   height: 50px;
@@ -86,18 +89,26 @@ a:hover, a:visited, a:link, a:active {
   display: block;
   color: #fafbff;
   background-color: #7dc67b;
-  padding: 0px;
+  padding: 0;
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  transform-style: preserve-3d; }
-  #diversityPop div, #contactPop div {
-    margin-top: -9.1666666667px; }
+  transform-style: preserve-3d;
+  position: relative; }
+  #diversityPop img, #contactPop img {
+    width: 40px;
+    position: absolute;
+    padding: 0;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
 
 #slogan {
-  font-family: "Open Sans" Helvetica, sans-serif;
+  font-family: "Open Sans", Helvetica, sans-serif;
   font-style: italic;
   text-align: center;
   font-size: 16px;
@@ -106,7 +117,7 @@ a:hover, a:visited, a:link, a:active {
 
 #navbar {
   background-color: #37383e;
-  font-family: "Open Sans" Helvetica, sans-serif;
+  font-family: "Open Sans", Helvetica, sans-serif;
   font-size: 17px;
   font-weight: 700;
   width: 100%;
@@ -137,7 +148,7 @@ a:hover, a:visited, a:link, a:active {
   margin-top: 10px; }
 
 .popover {
-  font-family: "Open Sans" Helvetica, sans-serif;
+  font-family: "Open Sans", Helvetica, sans-serif;
   width: 900px; }
   .popover .popover-header {
     background-color: #ebedf4; }

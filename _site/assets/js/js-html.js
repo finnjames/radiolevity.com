@@ -12,6 +12,10 @@ var newsletterPop = `
   </form>
 `;
 
+var diversityPop = `
+  We joyfully embrace the full spectrum of the light within, made visible through the participation of people of all beliefs, cultures, backgrounds, abilities, ethnicities and races, sexual orientations, and gender identities.
+`;
+
 var contactPop = `
   <div>531 Raleigh Road, Chapel Hill, NC 27514</div>
   <div><a href="mailto:friends@chapelhillfriends.org">friends@chapelhillfriends.org</a></div>

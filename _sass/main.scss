@@ -12,7 +12,7 @@
   transform-style: preserve-3d;
 }
 
-$fontstack: 'Open Sans' Helvetica, sans-serif;
+$fontstack: 'Open Sans', Helvetica, sans-serif;
 $titlestack: 'Crete Round', Georgia, serif;
 $transition: all 200ms ease-in-out;
 
@@ -98,6 +98,10 @@ a:hover, a:visited, a:link, a:active {
   }
 }
 
+.besideCHFM {
+  padding: 0px;
+}
+
 #diversityPop, #contactPop {
   $diameter: 50px;
   width: $diameter;
@@ -109,10 +113,18 @@ a:hover, a:visited, a:link, a:active {
   display: block;
   color: $color2;
   background-color: $color3;
-  padding: 0px;
+  padding: 0;
   @include vertical-center();
-  div {
-    margin-top: -$diameter*11/60;
+  position: relative;
+  img {
+    width: 40px;
+    position: absolute;
+    padding: 0;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
   }
 }
 
