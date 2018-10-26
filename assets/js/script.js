@@ -12,8 +12,39 @@ $(function () {
     8: "Quakers won the 1947 Nobel Peace Prize",
     9: "part of the Religious Society of Friends",
     10: "Quakerism was founded by George Fox",
+    11: "locally sourced",
+    12: "assembled in the U.S., designed by George Fox in England",
+    13: "not the same as Amish",
+    14: "not the same as Mormon",
+    15: "not the same as Mennonite, but they meet here too",
+    16: "go to Forum!",
+    17: "the full spectrum of the light... get it?",
+    18: "who said Quakers are humorless?",
+    19: "click my name at the bottom of the page",
+    20: "our old website looked like it was made in the 90s",
+    21: "likely not seen on tv",
+    22: "our favorite is Integrity Spice",
+    23: "there aren't a lot of good ‘quaker’ puns",
+    24: "This site lovingly constructed by yours truly",
+    25: "Go Heels!",
+    26: "the official site of the legendary CHFM",
+    27: "we love NPR",
+    28: "from WBEZ and public radio international",
+    29: "the Upper Pod recommends Sufjan Stevens’ Carrie & Lowell",
+    30: "war is not an answer",
+    31: "Quakers!!! Where?",
+    32: "the development name for this website was ‘pink-dandelion’",
+    33: "this Friend speaks my mind",
+    34: "who says Quakers never get anything done?",
+    35: "<3",
+    36: "the favicon is a monocolor version of the official quaker symbol",
+    37: "stop by for tea!",
+    38: "we were pacifists before it was cool",
+    39: "go CFS Fighting Quakers!",
+    40: "don't blame me, I just wrote the website"
   };
   var x = Math.floor(Math.random() * (Object.keys(slogans).length));
+  // var x = 23; // for bug testing
   $("#slogan").html(slogans[x]);
 });
 
