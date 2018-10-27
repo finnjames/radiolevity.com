@@ -15,13 +15,13 @@ html, body {
 body {
   background-color: #fafbff;
   color: #37383e;
-  font-family: "Open Sans", Helvetica, sans-serif;
+  font-family: "Noto Sans", Helvetica, sans-serif;
   font-size: 18px;
   display: flex;
   flex-direction: column; }
 
 h1 {
-  font-family: "Crete Round", Georgia, serif;
+  font-family: "Crete Round", "Noto Sans", Helvetica, sans-serif;
   font-weight: 700;
   font-size: 30px;
   color: #79b677;
@@ -43,7 +43,7 @@ h3 {
   font-style: italic; }
 
 p {
-  font-family: "Open Sans", Helvetica, sans-serif;
+  font-family: "Noto Sans", Helvetica, sans-serif;
   font-size: 16px;
   margin-bottom: 10px; }
 
@@ -60,9 +60,10 @@ a:hover, a:visited, a:link, a:active {
     margin-right: 0px; }
 
 #chfmText {
-  font-family: "Crete Round", Georgia, serif;
+  font-family: "Crete Round", "Noto Sans", Helvetica, sans-serif;
   font-weight: 700;
   font-size: 2em;
+  font-style: italic;
   color: #fafbff;
   text-align: center;
   background-image: linear-gradient(10deg, #7dc67b 0%, #9191e9 70%);
@@ -70,11 +71,11 @@ a:hover, a:visited, a:link, a:active {
   -webkit-text-fill-color: transparent; }
 
 #slogan {
-  font-family: "Open Sans", Helvetica, sans-serif;
-  font-style: italic;
-  font-weight: 700;
+  font-family: "Noto Sans", Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
   text-align: center;
-  font-size: 16px;
+  font-size: 15px;
   color: #7dc67b;
   background-image: linear-gradient(10deg, #7dc67b 0%, #9191e9 70%);
   -webkit-background-clip: text;
@@ -131,7 +132,7 @@ a:hover, a:visited, a:link, a:active {
 
 #navbar {
   background-color: #37383e;
-  font-family: "Open Sans", Helvetica, sans-serif;
+  font-family: "Noto Sans", Helvetica, sans-serif;
   font-size: 17px;
   font-weight: 700;
   width: 100%;
@@ -172,7 +173,7 @@ a:hover, a:visited, a:link, a:active {
   background-attachment: fixed; }
 
 .popover {
-  font-family: "Open Sans", Helvetica, sans-serif;
+  font-family: "Noto Sans", Helvetica, sans-serif;
   width: 900px; }
   .popover .popover-header {
     background-color: #ebedf4;

@@ -29,8 +29,8 @@
   background-attachment: fixed;
 }
 
-$fontstack: 'Open Sans', Helvetica, sans-serif;
-$titlestack: 'Crete Round', Georgia, serif;
+$fontstack: 'Noto Sans', Helvetica, sans-serif;
+$titlestack: 'Crete Round', $fontstack;
 $transition: all 200ms ease-in-out;
 
 html, body {
@@ -95,6 +95,7 @@ a:hover, a:visited, a:link, a:active {
   font-family: $titlestack;
   font-weight: 700;
   font-size: 2em;
+  font-style: italic;
   color: $color2;
   text-align: center;
   @include gradient-text();
@@ -103,10 +104,10 @@ a:hover, a:visited, a:link, a:active {
 
 #slogan {
   font-family: $fontstack;
-  font-style: italic;
-  font-weight: 700;
+  font-style: normal;
+  font-weight: 400;
   text-align: center;
-  font-size: 16px;
+  font-size: 15px;
   color: $color3;
   @include gradient-text();
   margin: 0px;
