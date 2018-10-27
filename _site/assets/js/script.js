@@ -50,6 +50,7 @@ $(function () {
 
 
 // diversity and contact popovers
+// TODO: extend functionality to mobile
 $(function () {
   $('#diversityPop').popover({
     title: 'Statement',
@@ -63,7 +64,7 @@ $(function () {
   });
 });
 
-// diversity and contact tooltips (ask people to click)
+// diversity and contact tooltips
 $(function () {
   $('#diversityPop').tooltip({
     title: 'inclusion statement',
