@@ -30,7 +30,7 @@
 }
 
 $fontstack: 'Noto Sans', Helvetica, sans-serif;
-$titlestack: 'Noto Serif', $fontstack;
+$titlestack: $fontstack;
 $titlestyle: normal;
 $transition: all 200ms ease-in-out;
 
