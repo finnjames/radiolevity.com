@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Home
+title: CHFM Home
 permalink: /
 sidebar: home
 ---

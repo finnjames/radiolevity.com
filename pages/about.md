@@ -1,6 +1,6 @@
 ---
 layout: sidebar
-title: About
+title: CHFM About
 permalink: /about
 sidebar: about-sidebar
 ---

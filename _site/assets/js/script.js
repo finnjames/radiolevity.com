@@ -115,7 +115,6 @@ $(function () {
         $(this).children('div.hilight').stop().animate({ height: originalMarginTop, marginTop: "0px" }, aniTimeIn, easeInType);
       }
     });
-    // TODO: consolidate this logic to avoid using both Jekyll and jQuery for one task
     $('.navElement').mouseout(function () {
       // make the current page not animate
       if (!($(this).children("a").hasClass('currentPage'))) {

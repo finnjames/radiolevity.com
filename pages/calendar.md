@@ -1,6 +1,6 @@
 ---
 layout: center
-title: Calendar
+title: CHFM Calendar
 permalink: /calendar
 ---
 

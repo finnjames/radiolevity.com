@@ -1,6 +1,6 @@
 ---
 layout: center
-title: Contact
+title: CHFM Contact
 permalink: /contact
 ---
 

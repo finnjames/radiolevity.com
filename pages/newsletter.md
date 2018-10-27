@@ -1,6 +1,6 @@
 ---
 layout: center
-title: Newsletter
+title: CHFM Newsletter
 permalink: /newsletter
 ---
 

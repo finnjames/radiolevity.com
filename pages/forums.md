@@ -1,6 +1,6 @@
 ---
 layout: center
-title: Forums
+title: CHFM Forums
 permalink: /forums
 ---
 
