@@ -12,8 +12,12 @@
   transform-style: preserve-3d;
 }
 
+@mixin gradient() {
+  background-image: $gradient;
+}
+
 @mixin gradient-text(){
-  background: $gradient;
+  background-image: $gradient;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -97,17 +101,16 @@ a:hover, a:visited, a:link, a:active {
   // text-shadow: $shadoweffect2;
 }
 
-.btn-success {
+.btn-light {
   background-color: $color3;
-  // background-image: $gradient;
-  // @include site-gradient();
+  @include site-gradient();
   // figure out how bootstap handles button borders before implementation
-  // background-image: $gradient-horizontal;
-  // background-size: cover;
-  // background-position: center;
-  // background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   border-color: $color5;
   margin-right: 10px;
+  border-width: 0;
   .icon {
     height: 14px;
     margin-right: 10px;
@@ -119,6 +122,7 @@ a:hover, a:visited, a:link, a:active {
   &:active {
     background-color: $color5;
     border-color: $color5;
+    border-width: 1px;
   }
 }
 
