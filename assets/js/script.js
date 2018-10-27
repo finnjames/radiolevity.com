@@ -16,7 +16,7 @@ $(function () {
     12: "assembled in the U.S., designed by George Fox in England",
     13: "not the same as Amish",
     14: "not the same as Mormon",
-    15: "not the same as Mennonite, but they meet here too",
+    15: "not the same as Mennonite, but they used to meet here too",
     16: "go to Forum!",
     17: "follow our insta",
     18: "who said Quakers are humorless?",

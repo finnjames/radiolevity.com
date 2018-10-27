@@ -19,7 +19,7 @@ $textcolor: $color1;
 
 $light1: lighten($color1, 40%);
 $light6: darken(lavender, 5%);
-$dark2: hsla(230%, 20%, 90%, 1);
+$dark2: lighten(hsla(230%, 20%, 90%, 1), 2%);
 $dark3: darken($color3, 30%);
 
 $gradient: linear-gradient(10deg, $color3 0%, $color6 70%);

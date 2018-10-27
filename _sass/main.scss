@@ -36,6 +36,7 @@ $transition: all 200ms ease-in-out;
 
 html, body {
   height: 100%;
+  background-color: $dark2;
 }
 
 body {
@@ -85,7 +86,7 @@ a:hover, a:visited, a:link, a:active {
 #header {
   color: $color5;
   margin: 0px;
-  background-color: $color1;
+  background-color: $dark2;
   padding: 0px;
   div {
     margin-left: 0px;
@@ -98,7 +99,7 @@ a:hover, a:visited, a:link, a:active {
   font-weight: 700;
   font-size: 34px;
   font-style: $titlestyle;
-  color: $color2;
+  color: $color1;
   text-align: center;
   // @include gradient-text();
   // text-shadow: $shadoweffect2;
@@ -109,32 +110,10 @@ a:hover, a:visited, a:link, a:active {
   font-style: normal;
   font-weight: 700;
   text-align: center;
-  font-size: 15px;
+  font-size: 16px;
   color: $color2;
   @include gradient-text();
   margin: 0px;
-}
-
-.btn-light {
-  background-color: $color3;
-  @include gradient();
-  //@include site-gradient();
-  border-color: $color5;
-  margin-right: 10px;
-  border-width: 0;
-  .icon {
-    height: 14px;
-    margin-right: 10px;
-  }
-  &:hover {
-    background-color: $color5;
-    border-color: $color5;
-  }
-  &:active {
-    background-color: $color5;
-    border-color: $color5;
-    border-width: 1px;
-  }
 }
 
 .besideCHFM {
@@ -155,6 +134,21 @@ a:hover, a:visited, a:link, a:active {
   padding: 0;
   @include vertical-center();
   position: relative;
+  @include gradient();
+  //@include site-gradient();
+  border-color: #8BC79C; // the background plus the bootstap gradient. Don't judge :P
+  margin-right: 10px;
+  border-width: 0;
+  .icon {
+    height: 14px;
+    margin-right: 10px;
+  }
+  &:active {
+    //background-color: $color5;
+    border-color: #8BC79C;
+    border-width: 1px;
+  }
+
   img {
     width: 40px;
     position: absolute;
@@ -168,7 +162,7 @@ a:hover, a:visited, a:link, a:active {
 }
 
 #navbar {
-  background-color: $color1;
+  background: inherit;
   font-family: $fontstack;
   font-size: 17px;
   font-weight: 700;
@@ -185,9 +179,9 @@ a:hover, a:visited, a:link, a:active {
   }
   a {
     text-decoration: none;
-    color: $color2;
+    color: $color1;
     &:visited {
-      color: $color2;
+      color: $color1;
     }
     &:hover {
       color: $color3;
