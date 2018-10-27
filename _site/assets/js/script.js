@@ -41,10 +41,10 @@ $(function () {
     37: "stop by for tea!",
     38: "we were pacifists before it was cool",
     39: "go CFS Fighting Quakers!",
-    40: "don't blame me, I just wrote the website"
+    40: "don't blame me, I just wrote the website",
   };
   var x = Math.floor(Math.random() * (Object.keys(slogans).length));
-  // var x = 23; // for bug testing
+  // var x = 40; // for bug testing
   $("#slogan").html(slogans[x]);
 });
 
