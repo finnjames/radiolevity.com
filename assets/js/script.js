@@ -108,7 +108,7 @@ $(function () {
     }
   });
 
-  if ($(window).width() >= 720) { // ideally this should make things less irritating on mobile
+  if ($(window).width() >= 720) { // makes things less irritating on mobile
     $('.navElement').mouseover(function () {
       // make the current page not animate
       if (!($(this).children("a").hasClass('currentPage'))) {

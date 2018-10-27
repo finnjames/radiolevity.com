@@ -24,6 +24,7 @@ h1 {
   font-family: "Crete Round", "Noto Sans", Helvetica, sans-serif;
   font-weight: 700;
   font-size: 30px;
+  font-style: italic;
   color: #79b677;
   display: inline-block;
   background-image: linear-gradient(10deg, #7dc67b 0%, #9191e9 70%);

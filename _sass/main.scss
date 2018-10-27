@@ -50,6 +50,7 @@ h1 {
   font-family: $titlestack;
   font-weight: 700;
   font-size: 30px;
+  font-style: italic;
   color: $color5;
   display: inline-block;
   @include gradient-text();
