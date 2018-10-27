@@ -79,18 +79,20 @@ $(function () {
 });
 
 // this one displays the tooltips on entering the site
-// $( function () {
-//   if ($(window).width() >= 720) {
-//     setTimeout(() => {
-//       $('#contactPop').tooltip('show');
-//       $('#diversityPop').tooltip('show');
-//     }, 400);
-//     setTimeout(() => {
-//       $('#diversityPop').tooltip('hide');
-//       $('#contactPop').tooltip('hide');
-//     }, 1800);
-//   }
-// });
+/*
+$( function () {
+  if ($(window).width() >= 720) {
+    setTimeout(() => {
+      $('#contactPop').tooltip('show');
+      $('#diversityPop').tooltip('show');
+    }, 400);
+    setTimeout(() => {
+      $('#diversityPop').tooltip('hide');
+      $('#contactPop').tooltip('hide');
+    }, 1800);
+  }
+});
+*/
 
 
 // underline nav items

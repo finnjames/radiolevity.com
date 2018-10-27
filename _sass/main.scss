@@ -34,13 +34,17 @@ $titlestack: $fontstack;
 $titlestyle: normal;
 $transition: all 200ms ease-in-out;
 
+.noPadding {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 html, body {
+  background-color: $color2;
   height: 100%;
-  background-color: $dark2;
 }
 
 body {
-  background-color: $color2;
   color: $textcolor;
   font-family: $fontstack;
   font-size: 18px;
