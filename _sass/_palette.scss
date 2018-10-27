@@ -13,15 +13,17 @@ $color2: hsla(230%, 100%, 99%, 1);
 $color3: hsla(118%, 40%, 63%, 1);
 $color4: hsla(119%, 54%, 85%, 1);
 $color5: hsla(118%, 30%, 59%, 1);
+$color6: darken(lavender, 20%);
 
 $textcolor: $color1;
 
 $light1: lighten($color1, 40%);
+$light6: darken(lavender, 5%);
 $dark2: hsla(230%, 20%, 90%, 1);
 $dark3: darken($color3, 30%);
 
-$gradient: linear-gradient(7deg, $color3 0%, darken(lavender, 20%) 70%);
-$gradient-horizontal: linear-gradient(to right, $color3 0%, darken(lavender, 20%) 70%);
+$gradient: linear-gradient(10deg, $color3 0%, $color6 70%);
+$gradient-horizontal: linear-gradient(to right, $color3 0%, $color6 70%);
 
 
 $shadoweffect: 0 1px  0 #898989,

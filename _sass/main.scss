@@ -53,7 +53,7 @@ h1 {
   color: $color5;
   display: inline-block;
   @include gradient-text();
-  @include site-gradient();
+  //@include site-gradient();
 }
 
 h2 {
@@ -97,17 +97,25 @@ a:hover, a:visited, a:link, a:active {
   font-size: 2em;
   color: $color2;
   text-align: center;
-  // @include gradient-text();
+  @include gradient-text();
   // text-shadow: $shadoweffect2;
+}
+
+#slogan {
+  font-family: $fontstack;
+  font-style: italic;
+  font-weight: 700;
+  text-align: center;
+  font-size: 16px;
+  color: $color3;
+  @include gradient-text();
+  margin: 0px;
 }
 
 .btn-light {
   background-color: $color3;
-  @include site-gradient();
-  // figure out how bootstap handles button borders before implementation
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  @include gradient();
+  //@include site-gradient();
   border-color: $color5;
   margin-right: 10px;
   border-width: 0;
@@ -154,16 +162,6 @@ a:hover, a:visited, a:link, a:active {
     right: 0;
     bottom: 0;
   }
-}
-
-#slogan {
-  font-family: $fontstack;
-  font-style: italic;
-  text-align: center;
-  font-size: 16px;
-  color: $color3;
-  @include gradient-text();
-  margin: 0px;
 }
 
 #navbar {
@@ -247,7 +245,8 @@ a:hover, a:visited, a:link, a:active {
     box-shadow: inset 0 -5px 0 $color4;
     color: inherit;
     &:hover {
-      background: $color4;
+      border-bottom: 2px solid $light6;
+      box-shadow: inset 0 -5px 0 $light6;
     }
   }
 }
