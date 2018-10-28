@@ -34,13 +34,15 @@ $titlestack: $fontstack;
 $titlestyle: normal;
 $transition: all 200ms ease-in-out;
 
+@import "landing";
+
 .noPadding {
   padding-left: 0;
   padding-right: 0;
 }
 
 html, body {
-  background-color: $color2;
+  background-color: $dark1;
   height: 100%;
 }
 
@@ -64,14 +66,14 @@ h1 {
 }
 
 h2 {
-  color: $color1;
+  color: $color2;
   font-weight: 700;
   font-size: 18px;
   margin-bottom: 0px;
 }
 
 h3 {
-  color: $light1;
+  color: $color2;
   padding-top: 5px;
   font-size: 14px;
   font-style: italic;
@@ -79,6 +81,7 @@ h3 {
 
 p {
   font-family: $fontstack;
+  color: $dark2;
   font-size: 16px;
   margin-bottom: 10px
 }
@@ -88,9 +91,9 @@ a:hover, a:visited, a:link, a:active {
 }
 
 #header {
-  color: $color5;
+  color: $color2;
   margin: 0px;
-  background-color: $dark2;
+  background-color: $color1;
   padding: 0px;
   div {
     margin-left: 0px;
@@ -103,10 +106,8 @@ a:hover, a:visited, a:link, a:active {
   font-weight: 700;
   font-size: 34px;
   font-style: $titlestyle;
-  color: $color1;
+  color: $color2;
   text-align: center;
-  // @include gradient-text();
-  // text-shadow: $shadoweffect2;
 }
 
 #slogan {
@@ -183,10 +184,7 @@ a:hover, a:visited, a:link, a:active {
   }
   a {
     text-decoration: none;
-    color: $color1;
-    &:visited {
-      color: $color1;
-    }
+    color: $color2;
     &:hover {
       color: $color3;
       @include gradient-text();
@@ -239,15 +237,14 @@ a:hover, a:visited, a:link, a:active {
 
 .pagecontent, .popover {
   a {
-    color: $color1;
     transition: color 200ms;
     text-align: right;
-    border-bottom: 2px solid $color4;
-    box-shadow: inset 0 -5px 0 $color4;
+    border-bottom: 2px solid $linkColor;
+    box-shadow: inset 0 -5px 0 $linkColor;
     color: inherit;
     &:hover {
-      border-bottom: 2px solid $light6;
-      box-shadow: inset 0 -5px 0 $light6;
+      border-bottom: 2px solid $linkHover;
+      box-shadow: inset 0 -5px 0 $linkHover;
     }
   }
 }
@@ -262,10 +259,10 @@ a:hover, a:visited, a:link, a:active {
       color: $light1;
     }
     &:hover {
-      color: $color3;
+      color: $color6;
     }
     &:active {
-      color: $color5;
+      color: $dark6;
     }
   }
 }
@@ -276,19 +273,19 @@ a:hover, a:visited, a:link, a:active {
   line-height: 18px;
   padding: 25px;
   margin-top: 25px;
-  background-color: $dark2;
-  color: $color1;
+  background-color: $color1;
+  color: $color2;
   flex-shrink: 0;
   a {
     text-decoration: underline;
-    color: $color1;
+    color: $dark2;
     display: inline-block;
     margin-bottom: 8px;
     &:hover {
-      color: $color3;
+      color: $color6;
     }
     &:active {
-      color: $color5;
+      color: $dark6;
     }
   }
 }
@@ -302,7 +299,7 @@ a:hover, a:visited, a:link, a:active {
 }
 
 #creditsReveal {
-  background-color: $dark2;
+  background-color: $color1;
   width: 100%;
   position: absolute;
   bottom: 0px;

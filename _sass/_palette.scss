@@ -1,6 +1,6 @@
 /* Coolors Exported Palette - coolors.co/373740-f9faff-72d38c-58a36c-416d4d */
 
-$color1: hsla(231%, 6%, 23%, 1);
+$color1: darken(hsla(231%, 6%, 23%, 1), 5%);
 $color2: hsla(230%, 100%, 99%, 1);
 $color3: hsla(118%, 40%, 63%, 1);
 $color4: hsla(119%, 54%, 85%, 1);
@@ -11,8 +11,13 @@ $textcolor: $color1;
 
 $light1: lighten($color1, 40%);
 $light6: darken(lavender, 5%);
-$dark2: lighten(hsla(230%, 20%, 90%, 1), 2%);
+$dark1: darken($color1, 5%);
+$dark2: darken(hsla(230%, 20%, 90%, 1), 15%);
 $dark3: darken($color3, 30%);
+$dark6: desaturate(darken($color6, 15%), 15%);
+
+$linkColor: desaturate(darken($color6, 40%), 30%);
+$linkHover: lighten($linkColor, 20%);
 
 $gradient: linear-gradient(10deg, $color3 0%, $color6 70%);
 $gradient-horizontal: linear-gradient(to right, $color3 0%, $color6 70%);
