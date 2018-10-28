@@ -49,32 +49,18 @@ $(function () {
 });
 
 
-// diversity and contact popovers
-// TODO: extend functionality to mobile
-$(function () {
-  $('#diversityPop').popover({
-    title: 'Statement',
-    html: true,
-    content: diversityPop,
-  });
-  $('#contactPop').popover({
-    title: 'Contact Us',
-    html: true,
-    content: contactPop,
-  });
-});
-
 // diversity and contact tooltips
 $(function () {
   $('#diversityPop').tooltip({
-    title: 'inclusion statement',
-    placement: 'left',
-    trigger: 'hover'
+    title: diversityPop,
+    placement: 'bottom',
+    trigger: 'hover focus'
   });
   $('#contactPop').tooltip({
-    title: 'contact us',
-    placement: 'right',
-    trigger: 'hover'
+    title: contactPop,
+    html: true,
+    placement: 'bottom',
+    trigger: 'hover focus',
   });
 });
 

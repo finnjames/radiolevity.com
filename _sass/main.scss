@@ -86,8 +86,14 @@ p {
   margin-bottom: 10px
 }
 
-a:hover, a:visited, a:link, a:active {
-    text-decoration: none;
+a {
+  color: $color6;
+  &:hover {
+    color: $dark6;
+  }
+  &:hover, &:visited, &:link, &:active {
+      text-decoration: none;
+  }
 }
 
 #header {
@@ -140,9 +146,7 @@ a:hover, a:visited, a:link, a:active {
   @include vertical-center();
   position: relative;
   @include gradient();
-  //@include site-gradient();
-  border-color: #8BC79C; // the background plus the bootstap gradient. Don't judge :P
-  margin-right: 10px;
+  border-color: #336737; // the background plus the bootstap border. Don't judge :P
   border-width: 0;
   .icon {
     height: 14px;
@@ -150,7 +154,7 @@ a:hover, a:visited, a:link, a:active {
   }
   &:active {
     //background-color: $color5;
-    border-color: #8BC79C;
+    border-color: #336737;
     border-width: 1px;
   }
 
@@ -164,6 +168,11 @@ a:hover, a:visited, a:link, a:active {
     right: 0;
     bottom: 0;
   }
+}
+
+.tooltip-inner {
+  max-width: 300px;
+  /* If max-width does not work, try using width instead */
 }
 
 #navbar {
@@ -274,7 +283,7 @@ a:hover, a:visited, a:link, a:active {
   padding: 25px;
   margin-top: 25px;
   background-color: $color1;
-  color: $color2;
+  color: $dark2;
   flex-shrink: 0;
   a {
     text-decoration: underline;
