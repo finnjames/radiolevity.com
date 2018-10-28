@@ -229,14 +229,13 @@ a:hover, a:visited, a:link, a:active {
 
 #creditsBlock {
   position: relative;
-  height: 18px;
+  height: auto;
   width: auto;
   padding: 0px;
   margin: 0px; }
 
 #creditsReveal {
   background-color: #e7e8ef;
-  height: inherit;
   width: 100%;
   position: absolute;
   bottom: 0px;
@@ -245,8 +244,5 @@ a:hover, a:visited, a:link, a:active {
 
 #credits {
   padding: 0px;
-  position: absolute;
-  height: inherit;
-  width: 100%;
-  top: 0px;
-  left: 0px; }
+  height: auto;
+  width: 100%; }

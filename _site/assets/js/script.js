@@ -224,7 +224,7 @@ $(function () {
 // makes the credits appear when you click my name
 $(function () {  
   var originalHeight = $('#credits').height();
-  
+  $('#creditsReveal').css({ "height": originalHeight });
   var state = true;
   
   $('#copyright').click(function () {
