@@ -53,7 +53,8 @@ class TextScramble {
   }
   randomChar() {
     return this.chars[Math.floor(Math.random() * this.chars.length)];
-  }}
+  }
+}
 
 
 // ——————————————————————————————————————————————————
@@ -62,21 +63,49 @@ class TextScramble {
 
 document.addEventListener("DOMContentLoaded", function(event) { 
 
-  const phrases = ['everyone wants to build', 'but no one wants to do maintenance', '-Kurt Vonnegut', ''];
+  var today = new Date();
+  var dd = today.getDate();
+
+  var mm = today.getMonth()+1; 
+  var yyyy = today.getFullYear();
+  if (dd<10) {
+    dd='0'+dd;
+  } 
+  if (mm<10) {
+    mm='0'+mm;
+  } 
+
+  var hours = today.getHours();
+  var minutes = today.getMinutes();
+  var ampm = hours >= 12 ? 'pm' : 'am';
+  hours = hours % 12;
+  hours = hours ? hours : 12; // the hour '0' should be '12'
+  minutes = minutes < 10 ? '0'+minutes : minutes;
+  var strTime = hours + ':' + minutes + ' ' + ampm;
+
+  const phrases = [yyyy + "." + mm + "." + dd, strTime, /* 'everyone wants to build', 'but no one wants to do maintenance', */ ''];
 
   const el = document.querySelector('.text');
   const fx = new TextScramble(el);
 
   let counter = 0;
 
+  function showHidden (id) {
+    document.getElementById(id).style.visibility = 'visible';
+  }
+
   const next = () => {
     if (counter < phrases.length) {
       fx.setText(phrases[counter]).then(() => {
-        setTimeout(next, 1000*(counter));
+        setTimeout(next, 500);
       })
       counter = (counter + 1);
+    } else {
+      document.getElementsByClassName("dove")[0].style.visibility = 'visible';
+      setTimeout(function(){ document.getElementsByClassName("dove")[1].style.visibility = 'visible'; document.getElementsByClassName("dove")[0].style.visibility = 'hidden';}, 160);
     }
   };
 
   next();
+  
 });
