@@ -7,6 +7,10 @@ html {
   background-color: #262626;
 }
 
+::selection {
+  background-color: none;
+}
+
 body {
   padding: 0;
   margin: 0;
