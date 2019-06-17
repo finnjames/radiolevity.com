@@ -1,0 +1,18 @@
+---
+layout: base
+---
+
+<div class="container">
+  <content class="row">
+    <div class="column" style="margin-top: 5%">
+      {{ content }}
+    </div>
+  </content>
+
+  <footer>
+    {% for item in site.data.footer %}
+      <div>{% if item.link %}<a href="{{ site.baseurl }}/{{ item.link }}">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}</div>
+    {% endfor %}
+  </footer>
+
+</div>

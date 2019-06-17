@@ -1,0 +1,50 @@
+---
+---
+
+@import 'normalize';
+@import 'skeleton';
+@import '_palette';
+@import '_typography';
+
+html {
+  background-color: $white;
+  font-size: 10pt;
+}
+
+body {
+  font-family: "Sweden Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: $typecolor;
+  display: flex;
+  justify-content: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  font-weight: bold;
+  // font-family: Fugaz One;
+}
+
+content {
+  width: 40vw;
+}
+
+footer {
+  border-top: solid 1px $light-black;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5%;
+  color: $light-black;
+  a {
+    text-decoration: none;
+  }
+}
+
+.center {
+  display: block;
+  text-align: center;
+}
+
+.accent-text {
+  color: $accent;
+}
