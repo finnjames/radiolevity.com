@@ -1,0 +1,26 @@
+title: With IT Tech Support
+# email: help@radiolevity.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Friendly neighborhood tech support for Macintosh
+baseurl: "" 
+url: "https://radiolevity.com"
+github_username:  radiolevity
+
+# Build settings
+markdown: kramdown
+
+# plugins
+plugins:
+
+collections:
+  - forums
+  - currently
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+
+defaults:
+  

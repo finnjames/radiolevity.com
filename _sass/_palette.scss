@@ -5,4 +5,31 @@ $accent: #70A3B5;
 
 $light-black: lighten($black, 40%);
 
+
+@mixin text-gradient {
+  @include gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 $typecolor: $black;
+
+$fontstack: "Roboto", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+@mixin gradient {
+  background: linear-gradient(
+    45deg,
+    #8E4766 0px,
+    #8E4766 20px,
+    #895A85 20px,
+    #895A85 40px,
+    #7D6F9E 40px,
+    #7D6F9E 60px,
+    #7082AD 60px,
+    #7082AD 80px,
+    #6A94B4 80px,
+    #6A94B4 100px,
+    $accent 100px,
+    $accent 120px,
+  );
+}

@@ -1,10 +1,6 @@
-- title: ichi
-  link: '#'
-- title: ni
-  link: '#'
-- title: san
-  link: '#'
-- title: yon
-  link: '#'
+- title: home
+  link: /
+- title: contact
+  link: /contact
 - title: |
     &copy; 2019 Finn James

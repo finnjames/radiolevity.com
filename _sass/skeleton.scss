@@ -125,7 +125,7 @@ body {
   font-size: 1.4em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
-  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: $fontstack;
   color: $black; }
 
 
@@ -176,7 +176,7 @@ input[type="button"] {
   padding: 0 30px;
   color: #555;
   text-align: center;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 600;
   line-height: 38px;
   letter-spacing: .1rem;
@@ -207,7 +207,7 @@ input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
   color: $white;
-  background-color: $accent;
+  background: $accent;
   border-color: $accent; }
 .button.button-primary:hover,
 button.button-primary:hover,
@@ -223,6 +223,12 @@ input[type="button"].button-primary:focus {
   background-color: rgba($accent, 0.8);
   border-color: rgba($accent, 0.8); }
 
+// make the buttons full width on mobile
+@media (max-width: 550px) {
+  button {
+    width: 100%;
+  }
+}
 
 /* Forms
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
