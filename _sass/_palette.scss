@@ -1,59 +1,10 @@
 
-$black: #444; // #28292F;
+$black: #444;
 $white: #e9e9e9;
-$accent: #70A3B5;
+$accent: #70a3b5;
 
-$light-black: lighten($black, 40%);
+$light-black: lighten($black, 38%);
 
 $typecolor: $black;
 
-$fontstack: "SF Pro Text", "Source Sans Pro", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-
-@mixin gradient {
-  background: linear-gradient(
-    45deg,
-    #002735 0px,
-    #002735 20px,
-    #014353 20px,
-    #014353 40px,
-    #2C6172 40px,
-    #2C6172 60px,
-    #4E8193 60px,
-    #4E8193 80px,
-    $accent 80px,
-    $accent 100px,
-  );
-}
-
-@mixin text-gradient {
-  display: inline-block;
-  @include gradient;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-$shadoweffect:  0px 1px 0     darken($white, 24%),
-                0px 2px  0    darken($white, 27%),
-                0px 3px  0    darken($white, 30%),
-                0px 4px  0    darken($white, 33%),
-                0px 5px  0    darken($white, 36%),
-                0px 6px  1px  rgba(0,0,0,.1),
-                0px 0    5px  rgba(0,0,0,.1),
-                0px 1px  3px  rgba(0,0,0,.3),
-                0px 3px  5px  rgba(0,0,0,.2),
-                0px 5px  10px rgba(0,0,0,.25),
-                0px 10px 10px rgba(0,0,0,.2),
-                0px 20px 20px rgba(0,0,0,.15);
-
-$shadoweffect2: 0px 1px 0     darken($accent, 14%),
-                0px 2px  0    darken($accent, 17%),
-                0px 3px  0    darken($accent, 20%),
-                0px 4px  0    darken($accent, 23%),
-                0px 5px  0    darken($accent, 26%),
-                0px 6px  1px  rgba(0,0,0,.1),
-                0px 0    5px  rgba(0,0,0,.1),
-                0px 1px  3px  rgba(0,0,0,.3),
-                0px 3px  5px  rgba(0,0,0,.2),
-                0px 5px  10px rgba(0,0,0,.25),
-                0px 10px 10px rgba(0,0,0,.2),
-                0px 20px 20px rgba(0,0,0,.15);
+$fontstack: "Source Sans Pro", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;

@@ -1,38 +1,49 @@
 ---
 layout: default
-title: With IT Home
+title: radiolevity IT
 permalink: /
 ---
 
-<div class="center">
-  <span id="logo">
-    <img src="{{ site.baseurl }}/assets/images/radio.svg" />
-  </span>
-</div>
-<div class="center">
-  <h1>radiolev<span class="accent-text">it</span>y</h1>
-</div>
+#### Need help?
 
-<i class="center">Friendly help for Macs</i>
-
-<h4>Need help?</h4>
-
-I would love to help you solve your computer problems. No problem is too big or small. Send me an email and I'll see what I can do!
+I would love to help you solve your computer problems. No problem is too big
+or small. Contact me and I'll see what I can do!
 
 <span class="center">
-  <button class="button-primary">send me an email</button>
-  <button class="">alternative contact</button>
+  <a href="mailto:radiolevity.help@gmail.com"><button class="button-primary">email</button></a>
+  <a href="tel:+1-919-442-8362"><button class="button-primary">call</button></a>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdbhG8sArTecBP84LYHcXNjHg_T0jBEbL6gyRZmDUu6p2ZcPw/viewform?usp=sf_link"><button class="button-primary">submit ticket</button></a>
 </span>
 
 <h4>Testimonials</h4>
-<div id="paper">
+<div id="testimonials">
   <div class="arrow" id="left-arrow">
-    <span class="far fa-hand-point-left"></span>
+    <span class="fas fa-arrow-circle-left"></span>
   </div>
-  <div id="testimonial" style="margin-left: 2rem; margin-right: 2rem">testimonial</div>
+  <div id="paper" style="margin-left: 2rem; margin-right: 2rem">testimonial</div>
   <div class="arrow" id="right-arrow">
-    <span class="far fa-hand-point-right"></span>
+    <span class="fas fa-arrow-circle-right"></span>
   </div>
 </div>
 
-Lorem ipsum dolor amet snackwave cred ex freegan bushwick <i>flannel keffiyeh</i> put a bird on it <a href="#">plaid voluptate 8-bit tilde</a>. Occupy enim portland gluten-free. Banh mi truffaut keffiyeh austin, man bun paleo adaptogen aesthetic vaporware brooklyn. Microdosing pop-up enim authentic anim literally marfa chicharrones fingerstache sustainable banjo palo santo exercitation. Plaid man braid hot chicken next level seitan master cleanse et. Biodiesel bespoke tote bag cred eu tousled blue bottle. Jianbing dolor meggings, pork belly whatever wolf distillery man bun salvia listicle.
+#### Info
+
+I know tech support can be unaffordable or unmanageable to individuals and
+small businesses, but in {{ site.time | date: "%Y" }} it is crucial that
+everyone have access to working technology.
+
+That's where I can help! I am a computer science student at UNC. I am very
+good at solving technical issues, especially on Macintosh. Email or call me
+and I will see how I can help!
+
+#### Pricing
+
+Since it doesn’t make sense to incentivize slow work, the fee is based on
+the required task. $20 to come by and assess the problem, then an estimate
+can be given. I prefer cash or Venmo.
+
+As an example, if you need help updating an old Macbook, it might be as simple
+as finding the proper version and installing; however, if the computer has not
+been updated in a while, various systems and credentials might need to be
+updated as well. I won’t know what needs to be done until I see the system in
+question, but then I can give a cost estimate based on what will be needed.

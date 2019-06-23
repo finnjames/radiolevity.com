@@ -7,7 +7,7 @@ class testimonial {
 
 var testimonials = [
   new testimonial("‘Genuinely the best tech support ever’ -Michael Scott", "Finn James"),
-  new testimonial("As the creator of several websites I feel incredibly qualified to say that this guy knows what he’s doing", "Finn James"),
+  new testimonial("As the creator of several websites I feel perfectly qualified to say that this guy knows what he’s doing", "Finn James"),
   new testimonial("I trust radiolevity tech support with my computer and my life, even though at this point those are basically the same thing", "Finn James"),
   new testimonial("I feel like it would be unprofessional to quote yourself in order to make your site look good", "Finn James")
 ]
@@ -24,7 +24,7 @@ function normalize(index) {
 
 function update(direction) {
   testimonial_index += direction;
-  $('#testimonial').html(format_testimonials(testimonials[normalize(testimonial_index)]));
+  $('#paper').html(format_testimonials(testimonials[normalize(testimonial_index)]));
 }
 
 $(function () {
