@@ -6,7 +6,7 @@
 @import '_typography';
 
 ::selection {
-  background-color: rgba($accent, 0.4);
+  background-color: lighten($accent, 20%);
 }
 
 html {
@@ -23,7 +23,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 1rem;
 }
 
@@ -38,8 +38,24 @@ blockquote {
 }
 
 header {
-
-  padding: 2rem 0 2rem;
+  background: $accent;
+  // @include gradient;
+  color: $white;
+  h1 {
+    padding: 1rem 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 16rem;
+  }
+  i {
+    font-size: 1.7rem;
+    display: block;
+    width: auto;
+    padding: 1rem 0 1rem;
+    // color: rgba($black, 60%);
+    background-color: desaturate(darken($accent, 10%), 10%);
+  }
 }
 
 .container {
@@ -56,7 +72,7 @@ content {
 }
 
 footer {
-  padding-top: 10px;
+  padding: 2rem 0 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -81,6 +97,11 @@ footer {
   color: $white;
 }
 
+.black-text {
+  color: $black;
+}
+
+
 .accent-text {
   color: $accent;
 }
@@ -92,6 +113,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1rem;
+  padding: 0 1rem 0;
 }
 
 #paper { // thanks CSS Tricks
@@ -140,12 +162,12 @@ footer {
   align-items: center;
   font-size: 4rem;
   line-height: inherit;
-  background: $accent;
-  color: $white;
+  background: $black;
+  color: $accent;
   border-radius: 12%;
   height: 5rem;
   width: 5rem;
-  margin-bottom: 1.4rem;
+  margin-bottom: 2rem;
   img {
     margin-top: -0.3rem;
     margin-left: 0.1rem;

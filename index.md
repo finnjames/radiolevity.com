@@ -12,7 +12,7 @@ or small. Contact me and I'll see what I can do!
 <span class="center">
   <a href="mailto:radiolevity.help@gmail.com"><button class="button-primary">email</button></a>
   <a href="tel:+1-919-442-8362"><button class="button-primary">call</button></a>
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdbhG8sArTecBP84LYHcXNjHg_T0jBEbL6gyRZmDUu6p2ZcPw/viewform?usp=sf_link"><button class="button-primary">submit ticket</button></a>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdbhG8sArTecBP84LYHcXNjHg_T0jBEbL6gyRZmDUu6p2ZcPw/viewform?usp=sf_link"><button class="">submit ticket</button></a>
 </span>
 
 <h4>Testimonials</h4>
@@ -34,13 +34,13 @@ everyone have access to working technology.
 
 That's where I can help! I am a computer science student at UNC. I am very
 good at solving technical issues, especially on Macintosh. Email or call me
-and I will see how I can help!
+and I will see what I can do for you.
 
 #### Pricing
 
 Since it doesn’t make sense to incentivize slow work, the fee is based on
-the required task. $20 to come by and assess the problem, then an estimate
-can be given. I prefer cash or Venmo.
+the required task. The fee is $20 for me to come by and assess the problem,
+then I can give you an estimate. I prefer cash or Venmo.
 
 As an example, if you need help updating an old Macbook, it might be as simple
 as finding the proper version and installing; however, if the computer has not
