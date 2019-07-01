@@ -1,3 +1,23 @@
+// font size adjustments
+
+/* var font_size = 9;
+
+$(function () {
+  $("html").css({'cssText':'font-size:' + font_size + 'pt'})
+})
+
+function change_font_size(i) {
+  font_size += i;
+  if (font_size < 6) {
+    font_size = 6;
+  } else if (font_size > 14) {
+    font_size = 14;
+  }
+  console.log(font_size);
+  $("html").css({'cssText':'font-size:' + font_size + 'pt'})
+} */
+
+// testimonial stuff
 class testimonial {
   constructor(quote, name) {
     this.quote = quote;

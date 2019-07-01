@@ -20,7 +20,7 @@ or small. Contact me and I'll see what I can do!
   <div class="arrow" id="left-arrow">
     <span class="fas fa-arrow-circle-left"></span>
   </div>
-  <div id="paper" style="margin-left: 2rem; margin-right: 2rem">testimonial</div>
+  <div id="paper">testimonial</div>
   <div class="arrow" id="right-arrow">
     <span class="fas fa-arrow-circle-right"></span>
   </div>
@@ -39,7 +39,7 @@ and I will see what I can do for you.
 #### Pricing
 
 Since it doesn’t make sense to incentivize slow work, the fee is based on
-the required task. The fee is $20 for me to come by and assess the problem,
+the required task. The fee is $20 for me to come by and assess the problem;
 then I can give you an estimate. I prefer cash or Venmo.
 
 As an example, if you need help updating an old Macbook, it might be as simple
