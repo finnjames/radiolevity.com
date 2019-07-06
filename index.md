@@ -18,11 +18,11 @@ or small. Contact me and I'll see what I can do!
 <h4>Testimonials</h4>
 <div id="testimonials">
   <div class="arrow" id="left-arrow">
-    <span class="fas fa-arrow-circle-left"></span>
+    <span>←</span>
   </div>
   <div id="paper">testimonial</div>
   <div class="arrow" id="right-arrow">
-    <span class="fas fa-arrow-circle-right"></span>
+    <span>→</span>
   </div>
 </div>
 
