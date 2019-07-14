@@ -72,7 +72,7 @@ html is set to 62.5% so that all the REM measurements throughout Skeleton
 are based on 10px sizing. So basically 1.5rem = 15px :) */
 html { font-size: 62.5%; }
 
-body { font-size: 1.4em; /* currently ems cause chrome bug misinterpreting rems on body element */ line-height: 1.6; font-weight: 400; font-family: "Source Sans Pro", Helvetica, sans-serif; color: #444; }
+body { font-size: 1.4em; /* currently ems cause chrome bug misinterpreting rems on body element */ line-height: 1.6; font-weight: 400; font-family: "futura-pt", "Source Sans Pro", Helvetica, sans-serif; color: #444; }
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -107,7 +107,7 @@ a:hover { color: rgba(140, 166, 189, 0.8); }
 
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.button, button, input[type="submit"], input[type="reset"], input[type="button"] { display: inline-block; height: 40px; padding: 0 30px; color: #555; text-align: center; font-size: 1.2rem; font-weight: 400; line-height: 14px; letter-spacing: .1rem; text-transform: uppercase; text-decoration: none; white-space: nowrap; background-color: transparent; border-radius: 4px; border: 1px solid #bbb; cursor: pointer; box-sizing: border-box; }
+.button, button, input[type="submit"], input[type="reset"], input[type="button"] { display: inline-block; height: 40px; padding: 0 40px; color: #555; text-align: center; font-size: 1.2rem; font-weight: 400; line-height: 14px; letter-spacing: .1rem; text-transform: uppercase; text-decoration: none; white-space: nowrap; background-color: transparent; border-radius: 4px; border: 1px solid #bbb; cursor: pointer; box-sizing: border-box; }
 
 .button:hover, button:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover, .button:focus, button:focus, input[type="submit"]:focus, input[type="reset"]:focus, input[type="button"]:focus { color: #333; border-color: #888; outline: 0; }
 
@@ -208,29 +208,27 @@ there.
 
 html { background-color: #e9e9e9; font-size: 10pt; }
 
-body { font-family: "Source Sans Pro", Helvetica, sans-serif; color: #444; font-weight: 400; }
+body { font-family: "futura-pt", "Source Sans Pro", Helvetica, sans-serif; color: #444; font-weight: 400; }
 
-h1, h2, h3, h4, h5, h6 { font-weight: 700; margin-bottom: 1rem; }
+h2, h3, h4, h5, h6 { font-weight: 700; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 1px; font-family: "futura-pt-bold", "futura-pt", "Source Sans Pro", Helvetica, sans-serif; }
 
 p { margin-bottom: 1rem; }
 
 blockquote { border-left: solid 4px #8ca6bd; margin-left: 0.8rem; padding-left: 1.4rem; }
 
-#logo { display: flex; justify-content: center; align-items: flex-end; height: auto; width: auto; padding: 0; }
+#logo { display: flex; justify-content: center; align-items: flex-end; height: auto; width: auto; padding: 0; padding-top: 1rem; margin-bottom: -2rem; }
 
-header { background: #8ca6bd; color: #e9e9e9; padding: 2rem 0 0; }
-header h1 { padding: 0; display: flex; align-items: flex-start; justify-content: center; height: 8rem; }
-header i { font-size: 1.6rem; display: block; width: auto; padding: 1rem 0 1rem; background-color: #778c9f; }
+header { background: #8ca6bd; color: #e9e9e9; }
+header #title { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 16rem; }
+header #title h1 { padding: 0; margin-bottom: 0 !important; font-size: 3.4rem; letter-spacing: 6px; text-transform: uppercase; font-weight: 700; margin-bottom: 2rem; font-family: "futura-pt-bold", "futura-pt", "Source Sans Pro", Helvetica, sans-serif; }
+header #title span { font-size: 2.4rem; display: block; width: auto; color: #5c6873; font-style: italic; }
 
-@media (min-width: 550px) { header h1 { height: 10rem; } }
+@media (min-width: 550px) { header #title { height: 14rem; }
+  header #title h1 { font-size: 5rem; letter-spacing: 12px; } }
 .container { width: 100vw; max-width: 800px; padding: 0 5%; display: flex; flex-direction: column; height: 100vh; }
 
 content { flex: 1 0 auto; }
 
-footer { padding: 2rem 0 1rem; display: flex; justify-content: space-between; align-items: center; margin-top: 0.2rem; margin-bottom: 2.6rem; color: #aaa; text-transform: uppercase; font-size: 1rem; line-height: 1rem; }
-footer div { flex: 1; }
-
-@media (max-width: 550px) { footer { margin-bottom: 0.8rem; } }
 .center { display: block; text-align: center; }
 
 .white-text { color: #e9e9e9; }
@@ -250,5 +248,9 @@ footer div { flex: 1; }
 
 .quoted { margin-left: auto; text-align: right; }
 
-#footer-logo { display: inline-flex; justify-content: center; align-items: center; font-size: 1.2rem; line-height: inherit; background: #aaa; color: #e9e9e9; border-radius: 12%; height: 1.5rem; width: 1.5rem; }
-#footer-logo img { width: 1.2rem; height: auto; }
+footer { display: flex; justify-content: space-between; align-items: center; flex-direction: column; margin-top: 0.4rem; color: #aaa; text-transform: uppercase; font-size: 1rem; line-height: 1rem; height: 400px; }
+footer div { flex: 1; }
+footer img { height: 30px; width: 30px; }
+
+@media (min-width: 550px) { footer { flex-direction: row; }
+  footer img { height: 40px; width: 40px; } }

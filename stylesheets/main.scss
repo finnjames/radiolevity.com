@@ -20,9 +20,12 @@ body {
   font-weight: 400;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6 {
   font-weight: 700;
   margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: $titlestack;
 }
 
 p {
@@ -36,38 +39,53 @@ blockquote {
 }
 
 #logo {
-  // background-color: green;
   display: flex;
   justify-content: center;
   align-items: flex-end;
   height: auto;
   width: auto;
   padding: 0;
+  padding-top: 1rem;
+  margin-bottom: -2rem;
 }
 
 header {
   background: $accent;
   color: $white;
-  padding: 2rem 0 0;
-  h1 {
-    padding: 0;
+  #title {
     display: flex;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    height: 8rem;
-  }
-  i {
-    font-size: 1.6rem;
-    display: block;
-    width: auto;
-    padding: 1rem 0 1rem;
-    background-color: $dark-accent;
+    height: 16rem;
+    h1 {
+      padding: 0;
+      margin-bottom: 0 !important;
+      font-size: 3.4rem;
+      letter-spacing: 6px;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 2rem;
+      font-family: $titlestack;
+    }
+    span {
+      font-size: 2.4rem;
+      display: block;
+      width: auto;
+      // padding: 1rem 0 1rem;
+      color: $dark-accent;
+      font-style: italic;
+    }
   }
 }
 
 @media (min-width: 550px) {
-  header h1 {
-    height: 10rem;
+  header #title {
+    height: 14rem;
+    h1 {
+    font-size: 5rem;
+    letter-spacing: 12px;
+    }
   }
 }
 
@@ -82,28 +100,6 @@ header {
 
 content {
   flex: 1 0 auto;
-}
-
-footer {
-  padding: 2rem 0 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 0.2rem;
-  margin-bottom: 2.6rem;
-  color: $light-black;
-  text-transform: uppercase;
-  font-size: 1rem;
-  line-height: 1rem;
-  div {
-    flex: 1;
-  }
-}
-
-@media (max-width: 550px) {
-  footer {
-    margin-bottom: 0.8rem;
-  }
 }
 
 // utility classes
@@ -175,19 +171,33 @@ footer {
   text-align: right;
 }
 
-#footer-logo {
-  display: inline-flex;
-  justify-content: center;
+footer {
+  // padding: 2rem 0 1rem;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  font-size: 1.2rem;
-  line-height: inherit;
-  background: $light-black;
-  color: $white;
-  border-radius: 12%;
-  height: 1.5rem;
-  width: 1.5rem;
+  flex-direction: column;
+  margin-top: 0.4rem;
+  color: $light-black;
+  text-transform: uppercase;
+  font-size: 1rem;
+  line-height: 1rem;
+  height: 400px;
+  div {
+    flex: 1;
+  }
   img {
-    width: 1.2rem;
-    height: auto;
+    height: 30px;
+    width: 30px;
+  }
+}
+
+@media (min-width: 550px) {
+  footer {
+    flex-direction: row;
+    img {
+      height: 40px;
+      width: 40px;
+    }
   }
 }
