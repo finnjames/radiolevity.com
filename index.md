@@ -37,6 +37,13 @@ forward. Email or call me and I will see what I can do for you!
   </div>
 </div>
 
+#### Latest project
+My most recent project can be found at <a href="https://chapelhillfriends.org">
+chapelhillfriends.org</a>. The site required a full rewrite and content
+migration in addition to a complete redesign. This was my largest project to
+date, and I had a great time working with the wonderful people at the Chapel
+Hill Friends Meeting!
+
 #### Pricing
 
 Construction and maintenance costs vary with the scope of the project. I will
