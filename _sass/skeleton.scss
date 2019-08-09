@@ -178,7 +178,7 @@ input[type="button"] {
   color: #555;
   text-align: center;
   font-size: 1.2rem;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 14px;
   letter-spacing: .1rem;
   text-transform: uppercase;
@@ -208,6 +208,7 @@ input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
   color: $white;
+  // font-family: $titlestack;
   font-weight: 600;
   background: $accent;
   border-color: $accent; }

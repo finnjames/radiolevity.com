@@ -10,7 +10,7 @@ I am a full stack web developer and designer! If you need a website I can make
 and maintain it for you. Email or call me and I'll see what I can do!
 
 <span class="center">
-  <a href="mailto:radiolevity.help@gmail.com"><button class="button-primary">email</button></a>
+  <a href="mailto:radiolevity.design@gmail.com"><button class="button-primary">email</button></a>
   <a href="tel:+1-919-442-8362"><button class="button-primary">call</button></a>
 </span>
 
