@@ -160,9 +160,11 @@ p {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: rgba($accent, 1); }
+  color: rgba($accent, 1);
+  text-decoration: none; }
 a:hover {
-  color: rgba($accent, 0.8); }
+  color: rgba($accent, 0.8);
+  text-decoration: none; }
 
 
 /* Buttons

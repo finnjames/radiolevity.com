@@ -5,6 +5,8 @@
 @import '_palette';
 @import '_typography';
 
+$content_width: 700px;
+
 ::selection {
   background-color: lighten($accent, 20%);
 }
@@ -46,7 +48,7 @@ blockquote {
   width: auto;
   padding: 0;
   padding-top: 1rem;
-  margin-bottom: -2rem;
+  margin-bottom: -1.4rem;
 }
 
 header {
@@ -57,7 +59,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 16rem;
+    height: 10rem;
     h1 {
       padding: 0;
       margin-bottom: 0 !important;
@@ -65,15 +67,14 @@ header {
       letter-spacing: 3px;
       text-transform: uppercase;
       font-weight: 700;
-      margin-bottom: 2rem;
+      margin-bottom: 3rem;
       font-family: $fontstack;
     }
     span {
       font-size: 2rem;
       display: block;
       width: auto;
-      // padding: 1rem 0 1rem;
-      color: $dark-accent;
+      padding: 0 0 0.8rem;
       font-style: italic;
     }
   }
@@ -81,7 +82,7 @@ header {
 
 @media (min-width: 550px) {
   header #title {
-    height: 14rem;
+    height: 12rem;
     h1 {
     font-size: 5rem;
     letter-spacing: 8px;
@@ -94,8 +95,7 @@ header {
 
 .container {
   width: 100vw;
-  max-width: 720px;
-  padding: 0 20px;
+  max-width: $content_width;
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -103,6 +103,9 @@ header {
 
 content {
   flex: 1 0 auto;
+  a {
+    text-decoration: underline;
+  }
 }
 
 // utility classes
