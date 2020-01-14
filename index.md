@@ -11,7 +11,6 @@ and maintain it for you. Email or call me and I'll see what I can do!
 
 <span class="center">
   <a style="text-decoration: none" href="mailto:radiolevity.design@gmail.com"><button style="text-decoration: none" class="button-primary">email</button></a>
-  <a href="tel:+1-919-442-8362"><button class="button-primary">call</button></a>
 </span>
 
 <h4 style="margin-top: -12px;">Info</h4>
