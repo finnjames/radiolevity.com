@@ -7,7 +7,7 @@ permalink: /
 #### Need a website?
 
 I am a full stack web developer and designer! If you need a website I can make
-and maintain it for you. Email or call me and I'll see what I can do!
+and maintain it for you. Email me and I'll see what I can do!
 
 <span class="center">
   <a style="text-decoration: none" href="mailto:radiolevity.design@gmail.com"><button style="text-decoration: none" class="button-primary">email</button></a>
