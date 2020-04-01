@@ -1,6 +1,6 @@
 
-$black: #444;
-$white: #e9e9e9;
+$black:  #444;
+$white:  #e9e9e9;
 $accent: #8ca6bd;
 
 $light-black: #aaa; // lighten($black, 38%);
@@ -8,4 +8,4 @@ $dark-accent: desaturate(darken($accent, 20%), 12%);
 
 $typecolor: $black;
 
-$fontstack: "futura-pt", Arial, sans-serif;
+$fontstack: "IBM Plex Sans", Helvetica Neue, Helvetica, sans-serif;
