@@ -27,7 +27,7 @@ h2, h3, h4, h5, h6 {
   margin-bottom: 1rem;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-family: $fontstack;
+  font-family: $titlestack;
 }
 
 p {
@@ -68,7 +68,7 @@ header {
       text-transform: uppercase;
       font-weight: 700;
       margin-bottom: 3rem;
-      font-family: $fontstack;
+      font-family: $titlestack;
     }
     span {
       font-size: 2rem;
